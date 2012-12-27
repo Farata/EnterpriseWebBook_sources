@@ -13,3 +13,5 @@ build/
 *.iml
 *.ipr
 *.iws
+
+.preview*.html

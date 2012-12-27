@@ -25,6 +25,8 @@ or
 
     gradlew.bat clean war
 
+to package all projects.
+
 ==== How to deploy and run ====
 
-Drop the war file from the +build/lib+ folder to the +webapps+ folder (Tomcat), +autodeploy+ (Glassfish) et al.
+Drop the war file from the +<project_name>/build/lib+ folder to the +webapps+ folder (Tomcat), +autodeploy+ (Glassfish) et al.
