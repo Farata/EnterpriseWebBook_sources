@@ -1,4 +1,4 @@
-allprojects{
+subprojects{
     apply plugin: 'war'
 
     task wrap(type: Wrapper) {
