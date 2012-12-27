@@ -1,0 +1,30 @@
+== EnterpriseWebBook_sources
+
+Code sample from the book http://enterprisewebbook.com/["*Enterprise Web Development: From Desktop to Mobile*"]
+
+=== Prerequisites ===
+
+You have to have `git` installed. Follow the instruction from https://help.github.com/articles/set-up-git[Github manual] to setup git on your machine.
+
+=== How to download and try code samples ===
+
+1. Create a folder on your local drive, e.g. `EnterpriseWebBook_sources` and open your command window in that directory.
+
+2. Clone the git repository using the following command
+
+    git clone https://github.com/Farata/EnterpriseWebBook_sources.git .
+
+3. Start Aptana Studio IDE and selected project (e.g. +project-15-dynamic-content-modules+) as described in Chapter 2.
+
+
+=== For Java developers: how to package the project into the war file for deployment ===
+
+    ./gradlew clean war
+
+or
+
+    gradlew.bat clean war
+
+==== How to deploy and run ====
+
+Drop the war file from the +build/lib+ folder to the +webapps+ folder (Tomcat), +autodeploy+ (Glassfish) et al.
