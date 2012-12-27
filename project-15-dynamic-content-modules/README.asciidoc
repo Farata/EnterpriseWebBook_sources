@@ -1,0 +1,9 @@
+== Save Sick Child: project 15 + on-demand modules loading
+
+=== How to create  ===
+
+    ./gradlew clean war
+
+=== How to deploe and run ===
+
+Drop war file from +build/lib+ folder to +webapps+ folder (Tomcat) or +autodeploy+ (Glassfish)
