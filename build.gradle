@@ -1,15 +1,15 @@
 allprojects{
     apply plugin: 'war'
 
-task wrap(type: Wrapper) {
-    gradleVersion = '1.3'
-}
+    task wrap(type: Wrapper) {
+        gradleVersion = '1.3'
+    }
 
-war{
-    from '.'
-    exclude 'build*'
-    exclude '.gradle'
-    exclude 'gradle*'
-}
+    war{
+        from '.'
+        exclude 'build*'
+        exclude '.gradle'
+        exclude 'gradle*'
+    }
 
 }
