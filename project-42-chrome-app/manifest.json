@@ -6,11 +6,14 @@
         "background": {
             "scripts": ["main.js"]
         }
-    },
+    }, "icons": {
+    "16": "icon-16.png",
+    "128": "icon-128.png"
+},
     "permissions": [
         "webview",
         "videoCapture",
         "experimental", {
-        "socket": ["tcp-connect", "tcp-listen"]
-    }]
+            "socket": ["tcp-connect", "tcp-listen"]
+        }]
 }
