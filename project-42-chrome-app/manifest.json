@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Save Sick Child App",
+    "name": "Save Sick Child App Photo Uploading app",
     "version": "1",
     "app": {
         "background": {
