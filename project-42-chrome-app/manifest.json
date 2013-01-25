@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Save Sick Child App",
+    "version": "1",
+    "app": {
+        "background": {
+            "scripts": ["main.js"]
+        }
+    },
+    "permissions": [
+        "webview",
+        "videoCapture",
+        "experimental", {
+        "socket": ["tcp-connect", "tcp-listen"]
+    }]
+}
