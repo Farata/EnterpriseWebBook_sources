@@ -63,13 +63,13 @@ $(function() {
 	$('#donate-button').on('click', showHideDonationForm);
 	$('#donate-later-link').on('click', showHideDonationForm);
 
-	// Intercept any click on the donate form in a capturing phase
+    function resetCustomAmount(event) {
+        if (event.target.type === "radio") {
+            $('#customAmount').val('');
+        }
+    }
+    // Intercept any click on the donate form in a capturing phase
 	$('#donate-form-container').on('click', resetCustomAmount);
-	function resetCustomAmount(event) {
-		if (event.target.type === "radio") {
-			$('#customAmount').val('');
-		}
-	}
 
 	var checkedInd = 2;
 	//uncheck selected radio buttons if custom amount was choosen
@@ -99,7 +99,7 @@ $(function() {
 
 /* --------- start // google maps | multi markers | json data -------------- */
 
-/*jshint undef:false */
+/*global google */
 $(function() {
     'use strict';
 
