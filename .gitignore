@@ -15,3 +15,4 @@ build/
 *.iws
 
 .preview*.html
+/chapter_08/project-ssc-jquery-tdd/node_modules/
