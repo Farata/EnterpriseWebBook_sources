@@ -1,0 +1,33 @@
+{
+  "campaigns": {
+    "header": "Nationwide Charity Events",
+    "timestamp":"12/15/2012",
+    "items": [
+      {
+        "title": "Lawyers for Children",
+        "description":"Lawyers offering free services for sick children",
+        "location":"New York,NY"
+      },
+      {
+        "title": "Mothers of Asthmatics",
+        "description":"Mothers of Asthmatics - nationwide Asthma network",
+        "location": "Dallas,TX"
+      },
+      {
+        "title": "Friends of Blind Kids",
+        "description":"Semi-annual charity events for blind kids",
+        "location":"Miami,FL"
+      },
+      {
+        "title": "A Place Called Home",
+        "description":"Adoption of sick children",
+        "location":"Chicago,IL"
+      },
+      {
+        "title": "Marathon for Survivors",
+        "description":"Annual marathon for cancer survivors",
+        "location":"Fargo, ND"
+      }
+    ]
+  }
+}

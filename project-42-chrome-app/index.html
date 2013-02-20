@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- Make sure the latest version of IE is used and if already installed, IE should use the Google Chrome Frame rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Save Sick Child | Home Page</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div id="main-container">
+    <header>
+        <h1 id="logo">Save Sick Child</h1>
+        <nav id="top-nav">
+            <ul>
+                <li id="login">
+                    <div id="authorized">
+                        <span class="icon-user authorized-icon"></span>
+                        <span id="user-authorized">admin</span>
+                        <br/>
+                        <a id="profile-link" href="javascript:void(0);">profile</a> | <a id="logout-link"
+                                                                                         href="javascript:void(0);">logout</a>
+                    </div>
+
+                    <form id="login-form">
+                        <span class="icon-user login-form-icons"></span>
+                        <input id="username" name="username" type="text" placeholder="username" autocomplete="off"/>
+                        &nbsp; <span class="icon-locked login-form-icons"></span>
+                        <input id="password" name="password" type="password" placeholder="password"/>
+                    </form>
+                    <a id="login-submit" href="javascript:void(0)">login &nbsp;<span class="icon-enter"></span> </a>
+                    <a id="login-link" class="show-form" href="javascript:void(0)">login &nbsp;<span
+                            class="icon-enter"></span> </a>
+
+
+                </li>
+                <li id="top-menu-items">
+                    <ul>
+                        <li>
+                            <a class="default" id="who-we-are" href="javascript:void(0)">Who We Are</a>
+                        </li>
+                        <li>
+                            <a class="default" id="what-we-do" href="javascript:void(0)">What We Do</a>
+                        </li>
+                        <li>
+                            <a class="default" id="where-we-work" href="javascript:void(0)">Where We Work</a>
+                        </li>
+                        <li>
+                            <a class="default" id="way-to-give" href="javascript:void(0)">Way To Give</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main" role="main">
+        <section id="main-top-section">
+
+            <!-- Now main-top-section is empty. All inner content will loaded dynamically -->
+
+        </section>
+        <section id="main-bottom-section">
+            <div id="video-container">
+                <video controls="controls" poster="assets/media/intro.jpg" width="390px" height="240"
+                       preload="metadata">
+                    <source src="assets/media/intro.mp4" type="video/mp4">
+                    <source src="assets/media/intro.webm" type="video/webm">
+                    <p>Sorry, your browser doesn't support the video element</p>
+                </video>
+                <!--Note: looping (or any sort of seeking, for that matter) in < video > elements
+                on Chrome only works if the video file was served up by a server
+                that understands partial content requests -->
+                <h3>Video header goes here</h3>
+                <h5><a href="javascript:void(0);">More video link</a></h5>
+            </div>
+            <div id="map-container">
+                <div id="location-map"></div>
+                <div id="location-ui"></div>
+                <a id="resize-map" href="javascript:void(0);">increase map's size</a>
+            </div>
+            <div id="charts-container">
+                <svg id="svg-container">
+
+                </svg>
+                <h3>Results for children</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                </p>
+            </div>
+
+        </section>
+    </div>
+    <footer>
+        <section id="temp-project-name-container">
+            <b>project 15</b>: Dynamic content
+        </section>
+        <section id="social-icons">
+            <a href="javascript:void(0)" title="Our Facebook page"><span aria-hidden="true"
+                                                                         class="icon-facebook"></span></a>
+            <a href="javascript:void(0)" title="Our Google Plus page"><span aria-hidden="true"
+                                                                            class="icon-gplus"></span></a>
+            <a href="javascript:void(0)" title="Our Twitter"><span aria-hidden="true" class="icon-twitter"></span></a>
+            &nbsp; <a href="javascript:void(0)" title="RSS feed"><span aria-hidden="true" class="icon-feed"></span></a>
+            <a href="javascript:void(0)" title="Email us"><span aria-hidden="true" class="icon-mail"></span></a>
+        </section>
+    </footer>
+</div>
+
+<script src="assets/js/libs/require.js" data-main="assets/js/app"></script>
+
+</body>
+</html>
