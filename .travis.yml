@@ -1,3 +1,3 @@
 language: node_js
 
-script: ./chapter_08/project-ssc-jquery-tdd/build.sh
+script: ./build.sh
