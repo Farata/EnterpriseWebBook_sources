@@ -1,0 +1,5 @@
+language: node_js
+ node_js:
+   - "0.8"
+
+script: ./chapter_08/project-ssc-jquery-tdd/build.sh
