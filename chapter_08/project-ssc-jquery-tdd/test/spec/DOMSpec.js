@@ -4,19 +4,19 @@
         var passwordInput;
 
         beforeEach(function () {
-            usernameInput = document.createElement("input");
-            usernameInput.setAttribute("type", "text");
-            usernameInput.setAttribute("id", "username");
-            usernameInput.setAttribute("name", "username");
-            usernameInput.setAttribute("placeholder", "username");
-            usernameInput.setAttribute("autocomplete", "off");
+            usernameInput = $(document.createElement("input")).attr({
+                type: 'text',
+                id: 'username',
+                name: 'username',
+                palceholder: "username",
+                autocomplete: "off"})[0];
 
-            passwordInput = document.createElement("input");
-            passwordInput.setAttribute("type", "text");
-            passwordInput.setAttribute("id", "password");
-            passwordInput.setAttribute("name", "password");
-            passwordInput.setAttribute("placeholder", "password");
-            passwordInput.setAttribute("autocomplete", "off");
+            passwordInput = $(document.createElement("input")).attr({
+                type: 'text',
+                id: 'password',
+                name: 'password',
+                palceholder: "password",
+                autocomplete: "off"})[0];
         });
 
         afterEach(function () {
@@ -26,8 +26,8 @@
             expect($).not.toBeNull();
         });
         it("inputs should exist", function () {
-            expect(usernameInput.id).toBe("username");
-            expect(passwordInput.id).toBe("password");
+            expect(usernameInput.id).toBe('username');
+            expect(passwordInput.id).toBe('password');
         });
         it("should not allow login with empty username and password and return code equals 0", function () {
             var result = ssc.login(usernameInput, passwordInput);
