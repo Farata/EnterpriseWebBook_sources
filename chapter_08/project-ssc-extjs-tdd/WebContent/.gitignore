@@ -1,0 +1,9 @@
+# extjs sdk
+ext/
+packages/
+
+# sencha cmd build files #
+build/
+
+# add target dir back, fixing maven ignore rules
+!ext/src/fx/target/
