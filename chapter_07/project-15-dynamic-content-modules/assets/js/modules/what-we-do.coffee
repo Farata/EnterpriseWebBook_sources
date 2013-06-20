@@ -1,6 +1,6 @@
 define ["newContentLoader"], (NewSection) ->
   console.log "what-we-do module is loaded"
-  WayToGive = ->
+  wayToGive = ->
     render: ->
       module_button = "what-we-do"
       newContainerID = "what-we-do-container"
@@ -8,4 +8,4 @@ define ["newContentLoader"], (NewSection) ->
       NewSection.getNewContent module_button, newContainerID, dataUrl
       console.log "what-we-do module is rendered"
 
-  WayToGive
+  wayToGive

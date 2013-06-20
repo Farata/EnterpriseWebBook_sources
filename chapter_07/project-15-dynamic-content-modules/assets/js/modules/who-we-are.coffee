@@ -1,6 +1,6 @@
 define ["newContentLoader"], (NewSection) ->
   console.log "who-we-are module is loaded"
-  WhatWeDo = ->
+  whatWeDo = ->
     rendered: false
     render: ->
       whatWeDoButton = "who-we-are"
@@ -9,4 +9,4 @@ define ["newContentLoader"], (NewSection) ->
       NewSection.getNewContent whatWeDoButton, newContainerID, dataUrl
       console.log "who-we-are module is rendered"
 
-  WhatWeDo
+  whatWeDo

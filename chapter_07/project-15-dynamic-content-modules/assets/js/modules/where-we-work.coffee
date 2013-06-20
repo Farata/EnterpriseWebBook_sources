@@ -1,6 +1,6 @@
 define ["newContentLoader"], (NewSection) ->
   console.log "where-we-work module is loaded"
-  WhereWeWork = ->
+  whereWeWork = ->
     render: ->
       module_button="where-we-work"
       newContainerID = "where-we-work-container"
@@ -8,4 +8,4 @@ define ["newContentLoader"], (NewSection) ->
       NewSection.getNewContent module_button, newContainerID, dataUrl
       console.log "where-we-work module is rendered"
 
-  WhereWeWork
+  whereWeWork
