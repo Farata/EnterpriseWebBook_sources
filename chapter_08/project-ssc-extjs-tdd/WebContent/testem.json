@@ -1,0 +1,7 @@
+{
+    "framework": "jasmine",
+    "src_files": [
+        "ext/ext-all.js",
+        "test.js"
+    ]
+}

@@ -1,23 +1,23 @@
-# SSC/app
+== SSC/app
 
 This folder contains the javascript files for the application.
 
-# SSC/resources
+== SSC/resources
 
 This folder contains static resources (typically an `"images"` folder as well).
 
-# SSC/overrides
+== SSC/overrides
 
 This folder contains override classes. All overrides in this folder will be 
 automatically included in application builds if the target class of the override
 is loaded.
 
-# SSC/sass/etc
+== SSC/sass/etc
 
 This folder contains misc. support code for sass builds (global functions, 
 mixins, etc.)
 
-# SSC/sass/src
+== SSC/sass/src
 
 This folder contains sass files defining css rules corresponding to classes
 included in the application's javascript code build.  By default, files in this 

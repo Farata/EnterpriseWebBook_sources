@@ -14,7 +14,7 @@ module.exports = (grunt) ->
 
     karma:
       unit:
-        configFile: 'test/runner/karma.conf.js',
+        configFile: 'test/runner/karma_min.conf.js',
         autoWatch: true
 
   # Alias the `test` task
