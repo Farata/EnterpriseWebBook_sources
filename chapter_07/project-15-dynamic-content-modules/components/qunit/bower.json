@@ -1,0 +1,17 @@
+{
+  "name": "qunit",
+  "version": "1.11.0",
+  "main": [
+    "./qunit.js",
+    "./qunit.css"
+  ],
+  "gitHead": "6346236ef47d2dc511f0716a478d10cf7e4aa499",
+  "readme": "QUnit\n=====\n\nShim repository for [QUnit](http://qunitjs.com).\n\n\nPackage Managers\n----------------\n\n* [Bower](http://bower.io): `qunit`\n* [Composer](http://packagist.org/packages/components/qunit): `components/qunit`\n* [Component](http://github.com/component/component): `component/qunit`\n",
+  "readmeFilename": "README.md",
+  "_id": "qunit@1.11.0",
+  "description": "QUnit =====",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/components/qunit.git"
+  }
+}

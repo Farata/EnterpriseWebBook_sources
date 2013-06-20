@@ -1,0 +1,12 @@
+{
+  "name": "qunit",
+  "repo": "components/qunit",
+  "version": "1.11.0",
+  "main": "qunit.js",
+  "scripts": [
+    "qunit.js"
+  ],
+  "styles": [
+    "qunit.css"
+  ]
+}
