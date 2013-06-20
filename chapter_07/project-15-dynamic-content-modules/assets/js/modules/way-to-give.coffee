@@ -1,6 +1,6 @@
 define ["newContentLoader"], (NewSection) ->
   console.log "way-to-give module is loaded"
-  WayToGive = ->
+  wayToGive = ->
     rendered: false
     render: ->
       whatWeDoButton = "way-to-give"
@@ -11,4 +11,4 @@ define ["newContentLoader"], (NewSection) ->
     init: ->
       console.log "way-to-give init"
 
-  WayToGive
+  wayToGive
