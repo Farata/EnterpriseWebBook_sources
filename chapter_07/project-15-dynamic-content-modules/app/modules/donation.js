@@ -35,7 +35,7 @@ define(["showHideDiv", "loadHtmlContent"], function (showHide, loadHtml) {
 
         function onCustomAmountBlur() {
             var value = customAmount.value;
-            if (value == '') {
+            if (value === '') {
                 donateForm[checkedInd].checked = true;
             }
         }
@@ -51,7 +51,7 @@ define(["showHideDiv", "loadHtmlContent"], function (showHide, loadHtml) {
 
     }
 
-    loadHtml.loadContent(dataUrl, mainTopSection, initDonationSection);
+    loadHtml.loadHtmlContent(dataUrl, mainTopSection, initDonationSection);
 
     console.log('donation module was loaded');
 });

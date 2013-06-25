@@ -6,3 +6,4 @@ build/
 *.iws
 node_modules/
 temp/
+.idea/
