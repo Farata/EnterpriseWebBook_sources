@@ -3,6 +3,12 @@ var _this = this;
 
 module.exports = function(grunt) {
   'use strict';  grunt.initConfig({
+    watch: {
+      reload: {
+        files: ["app/**/*.js", "test/spec/**/*.js"],
+        tasks: ["test"]
+      }
+    },
     sencha_jasmine: {
       keepRunner: false,
       options: {
@@ -18,5 +24,6 @@ module.exports = function(grunt) {
     }
   });
   grunt.loadNpmTasks('grunt-sencha-jasmine');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   return grunt.registerTask('test', 'sencha_jasmine');
 };
