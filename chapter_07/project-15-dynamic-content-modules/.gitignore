@@ -1,0 +1,9 @@
+*.class
+.gradle
+build/
+*.iml
+*.ipr
+*.iws
+node_modules/
+temp/
+.idea/

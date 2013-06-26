@@ -1,0 +1,13 @@
+$ssc-header-text-color: #6685CC;
+$ssc-header-text-shadow-color: #fff;
+
+.app-header-logo {
+  background: url("images/logo.png") no-repeat;
+}
+
+.app-header-title {
+  color: $ssc-header-text-color;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 $ssc-header-text-shadow-color;;
+}

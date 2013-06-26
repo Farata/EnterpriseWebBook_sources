@@ -1,0 +1,42 @@
+{
+    "name": "components/qunit",
+    "homepage": "http://qunitjs.com",
+    "description": "An easy-to-use JavaScript Unit Testing framework.",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/jquery/qunit/issues",
+        "source": "https://github.com/jquery/qunit"
+    },
+    "authors": [
+        {
+            "name": "jQuery Foundation and other contributors",
+            "homepage": "https://github.com/jquery/qunit/blob/master/AUTHORS.txt"
+        },
+        {
+            "name": "John Resig",
+            "email": "jeresig@gmail.com",
+            "homepage": "http://ejohn.org/"
+        },
+        {
+            "name": "Jörn Zaefferer",
+            "email": "joern.zaefferer@gmail.com",
+            "homepage": "http://bassistance.de"
+        }
+    ],
+    "require": {
+        "robloach/component-installer": "*"
+    },
+    "extra": {
+        "component": {
+            "scripts": [
+                "qunit.js"
+            ],
+            "styles": [
+                "qunit.css"
+            ],
+            "shim": {
+                "exports": "QUnit"
+            }
+        }
+    }
+}
