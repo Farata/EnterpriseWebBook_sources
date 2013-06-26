@@ -1,16 +1,20 @@
 Ext.define('SSC.controller.Donate', {
     extend: 'Ext.app.Controller',
 
-    refs: [{
-        ref: 'donatePanel',
-        selector: '[cls=donate-panel]'
-    }, {
-        ref: 'usernameBox',
-        selector: 'textfield[name=username]'
-    }, {
-        ref: 'passwordBox',
-        selector: 'textfield[name=password]'
-    }],
+    refs: [
+        {
+            ref: 'donatePanel',
+            selector: '[cls=donate-panel]'
+        },
+        {
+            ref: 'usernameBox',
+            selector: 'textfield[name=username]'
+        },
+        {
+            ref: 'passwordBox',
+            selector: 'textfield[name=password]'
+        }
+    ],
 
     init: function () {
         'use strict';
@@ -44,11 +48,22 @@ Ext.define('SSC.controller.Donate', {
 
     submitDonateForm: function () {
         var form = this.getDonatePanel().down('form');
-        form.isValid();
+
+        if (form.isValid()) {
+            var donorInfo = this.newDonorInfo();
+            Ext.iterate(form.getValues(), function (key, value) {
+                donorInfo.set(key, value);
+            }, this);
+            donorInfo.donate();
+        }
     },
 
     showLoginFields: function () {
         this.getUsernameBox().show();
         this.getPasswordBox().show();
+    },
+    newDonorInfo: function () {
+        return Ext.create('SSC.model.DonorInfo', {});
     }
+
 });

@@ -8,6 +8,7 @@
     "grunt-contrib-jasmine": "~0.4.2",
     "grunt-contrib-watch": "~0.2.0",
     "grunt-karma": "~0.4.3",
-    "grunt-sencha-jasmine": "~0.2.3"
+    "grunt-sencha-jasmine": "~0.2.3",
+    "grunt-testem": "~0.3.4"
   }
 }

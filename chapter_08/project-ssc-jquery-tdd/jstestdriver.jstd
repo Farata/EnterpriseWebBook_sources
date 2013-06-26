@@ -1,0 +1,10 @@
+server: http://localhost:9876
+
+load:
+    - app/js/libs/jquery-1.9.0.min.js
+    - app/js/main_r.js
+    - test/lib/jasmine-1.3.1/jasmine.js
+    - test/lib/jasmine-1.3.1/JasmineAdapter.js
+    - test/lib/jasmine-1.3.1/jasmine-fixture.js
+
+test:

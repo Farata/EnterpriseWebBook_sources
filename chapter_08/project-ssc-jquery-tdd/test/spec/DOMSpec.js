@@ -8,14 +8,16 @@
                 type: 'text',
                 id: 'username',
                 name: 'username',
-                palceholder: "username",
+                placeholder: "username",
                 autocomplete: "off"})[0];
+
+            // usernameInput = affix('input[id="username"][type="text"][name="username][placeholder="username"][autocomplete="off"]')[0];
 
             passwordInput = $(document.createElement("input")).attr({
                 type: 'text',
                 id: 'password',
                 name: 'password',
-                palceholder: "password",
+                placeholder: "password",
                 autocomplete: "off"})[0];
         });
 
