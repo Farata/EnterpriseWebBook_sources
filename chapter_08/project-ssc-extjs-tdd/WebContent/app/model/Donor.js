@@ -1,3 +1,14 @@
-/**
- * Created by apple on 5/22/13.
- */
+Ext.define('SSC.model.Donor', {
+    extend: 'Ext.data.Model',
+    idProperty: '',
+    fields: [
+        {
+            name: 'donors',
+            type: 'int'
+        },
+        {
+            name: 'location',
+            type: 'string'
+        }
+    ]
+});
