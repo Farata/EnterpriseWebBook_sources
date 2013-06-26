@@ -1,11 +1,10 @@
 define [
   'order!login',
   'order!donation',
-#  'order!campaigns-map',
+  'order!campaigns-map',
   'order!svg-pie-chart',
-  "modules/generic-module"
+  'modules/generic-module'
 ], ()->
-  console.log "app is loaded"
 
   (->
     way_to_give = document.getElementById("way-to-give")
@@ -39,12 +38,12 @@ define [
       clickEventHandler = (event)->
         return if module is "loading"
         if module?
-          module.render()
+          module.render(button.id, containerId, htmlContentPath)
         else
           module = "loading"
           require ["modules/generic-module"], (genericModule)->
             module = new genericModule(moduleId);
-            module.render(button, containerId, htmlContentPath)
+            module.render(button.id, containerId, htmlContentPath)
 
     initModule = (module)->
       handler = lazyLoadingEventHandlerFactory(module.moduleId, module.button, module.container,
@@ -52,5 +51,7 @@ define [
       module.button.addEventListener "click", handler, false
 
     initModule module for module in modulesConfig
+
+    console.log "app is loaded"
 
     return)()
