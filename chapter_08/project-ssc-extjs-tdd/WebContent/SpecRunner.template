@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Jasmine Spec Runner for ExtJS app</title>
+<% css.forEach(function(style){ %>
+    <link rel="stylesheet" type="text/css" href="<%= style %>">
+<% }) %>
+
+    <script src="<%= options.extFramework %>/ext-all-debug.js"></script>
+<% with (scripts) { %>
+    <% [].concat(jasmine, vendor, helpers, src).forEach(function(script){ %>
+    <script src="<%= script %>"></script>
+    <% }) %>
+<% }; %>
+    <script>
+    (function(){
+             Ext.Loader.setConfig({
+                 disableCaching: false,
+                 enabled: true,
+                 paths:
+                     <%= options.extLoaderPaths %>
+             });
+
+             var Application = null;
+
+             Ext.onReady(function () {
+                 Application = Ext.create('Ext.app.Application', {
+                     name: 'SSC',
+                     requires: [
+                         'Test.spec.AllSpecs'
+                     ],
+                     controllers:
+                         <%= options.extControllers %> ,
+                     launch: function () {
+                         Ext.create('Test.spec.AllSpecs');
+                         jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+                         jasmine.getEnv().execute();
+                     }
+                 });
+             });
+    })();
+    </script>
+     <% with (scripts) { %>
+            <% [].concat(reporters).forEach(function(script){ %>
+                <script src="<%= script %>"></script>
+            <% }) %>
+        <% }; %>
+</head>
+<body>
+</body>
+</html>
