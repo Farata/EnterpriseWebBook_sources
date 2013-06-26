@@ -2,39 +2,36 @@
 define(['order!login', 'order!donation', 'order!svg-pie-chart'], function() {
   console.log("app is loaded");
   return (function() {
-    var lazyLoadingEventHandlerFactory, wayToGiveHandleClick, wayToGiveModule, way_to_give, whatWeDoHandleClick, whatWeDoModule, what_we_do, whereWeWorkHandleClick, whereWeWorkModule, where_we_work, whoWeAreHandleClick, whoWeAreModule, who_we_are;
+    var lazyLoadingEventHandlerFactory, wayToGiveHandleClick, way_to_give, whatWeDoHandleClick, what_we_do, whereWeWorkHandleClick, where_we_work, whoWeAreHandleClick, who_we_are;
 
     way_to_give = document.getElementById("way-to-give");
     what_we_do = document.getElementById("what-we-do");
     who_we_are = document.getElementById("who-we-are");
     where_we_work = document.getElementById("where-we-work");
-    wayToGiveModule = null;
-    whatWeDoModule = null;
-    whoWeAreModule = null;
-    whereWeWorkModule = null;
-    lazyLoadingEventHandlerFactory = function(module, modulePath) {
+    lazyLoadingEventHandlerFactory = function(moduleId, button, containerId, htmlContentPath) {
       var clickEventHandler;
 
-      clickEventHandler = function(event) {
+      return clickEventHandler = function(event) {
+        var module;
+
         if (module === "loading") {
           return;
         }
-        if (module !== null) {
+        if (typeof module !== "undefined" && module !== null) {
           return module.render();
         } else {
           module = "loading";
-          return require([modulePath], function(ModuleObject) {
-            module = new ModuleObject();
-            return module.render();
+          return require(["modules/generic-module"], function(genericModule) {
+            module = new genericModule(moduleId);
+            return module.render(button, containerId, htmlContentPath);
           });
         }
       };
-      return clickEventHandler;
     };
-    wayToGiveHandleClick = lazyLoadingEventHandlerFactory(wayToGiveModule, "modules/way-to-give");
-    whatWeDoHandleClick = lazyLoadingEventHandlerFactory(whatWeDoModule, "modules/what-we-do");
-    whoWeAreHandleClick = lazyLoadingEventHandlerFactory(whoWeAreModule, "modules/who-we-are");
-    whereWeWorkHandleClick = lazyLoadingEventHandlerFactory(whereWeWorkModule, "modules/where-we-work");
+    wayToGiveHandleClick = lazyLoadingEventHandlerFactory("wayToGive", way_to_give, "way-to-give-container", "assets/html-includes/way-to-give.html");
+    whatWeDoHandleClick = lazyLoadingEventHandlerFactory("whatWeDo", what_we_do, "what-we-do-container", "assets/html-includes/what-we-do.html");
+    whoWeAreHandleClick = lazyLoadingEventHandlerFactory("whatWeAre", who_we_are, "who-we-are-container", "assets/html-includes/who-we-are.html");
+    whereWeWorkHandleClick = lazyLoadingEventHandlerFactory("whereWeWork", where_we_work, "where-we-work-container", "assets/html-includes/where-we-work.html");
     way_to_give.addEventListener("click", wayToGiveHandleClick, false);
     what_we_do.addEventListener("click", whatWeDoHandleClick, false);
     who_we_are.addEventListener("click", whoWeAreHandleClick, false);

@@ -1,7 +1,7 @@
 define [
   'order!login',
   'order!donation',
-  'order!campaigns-map',
+#  'order!campaigns-map',
   'order!svg-pie-chart'
 ], ()->
   console.log "app is loaded"
@@ -11,28 +11,27 @@ define [
     what_we_do = document.getElementById("what-we-do")
     who_we_are = document.getElementById("who-we-are")
     where_we_work = document.getElementById("where-we-work")
-    wayToGiveModule = null
-    whatWeDoModule = null
-    whoWeAreModule = null
-    whereWeWorkModule = null
 
-    lazyLoadingEventHandlerFactory = (module, modulePath)->
+    lazyLoadingEventHandlerFactory = (moduleId, button, containerId, htmlContentPath)->
       clickEventHandler = (event)->
         return if module is "loading"
-        if module isnt null
+        if module?
           module.render()
         else
           module = "loading"
-          require [modulePath], (ModuleObject)->
-            module = new ModuleObject()
-            module.render()
+          require ["modules/generic-module"], (genericModule)->
+            module = new genericModule(moduleId);
+            module.render(button, containerId, htmlContentPath)
 
-      clickEventHandler
+    wayToGiveHandleClick = lazyLoadingEventHandlerFactory("wayToGive", way_to_give, "way-to-give-container",
+      "assets/html-includes/way-to-give.html")
 
-    wayToGiveHandleClick = lazyLoadingEventHandlerFactory(wayToGiveModule, "modules/way-to-give")
-    whatWeDoHandleClick = lazyLoadingEventHandlerFactory(whatWeDoModule, "modules/what-we-do")
-    whoWeAreHandleClick = lazyLoadingEventHandlerFactory(whoWeAreModule, "modules/who-we-are")
-    whereWeWorkHandleClick = lazyLoadingEventHandlerFactory(whereWeWorkModule, "modules/where-we-work")
+    whatWeDoHandleClick = lazyLoadingEventHandlerFactory("whatWeDo", what_we_do, "what-we-do-container",
+      "assets/html-includes/what-we-do.html")
+    whoWeAreHandleClick = lazyLoadingEventHandlerFactory("whatWeAre", who_we_are, "who-we-are-container",
+          "assets/html-includes/who-we-are.html")
+    whereWeWorkHandleClick = lazyLoadingEventHandlerFactory("whereWeWork", where_we_work, "where-we-work-container",
+              "assets/html-includes/where-we-work.html")
 
     way_to_give.addEventListener "click", wayToGiveHandleClick, false
     what_we_do.addEventListener "click", whatWeDoHandleClick, false
