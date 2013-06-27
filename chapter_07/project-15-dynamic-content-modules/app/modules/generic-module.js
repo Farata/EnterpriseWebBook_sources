@@ -5,7 +5,8 @@ define(["newContentLoader"], function(contentLoader) {
   genericModule = function(moduleId) {
     return {
       render: function(button, containerId, dataUrl) {
-        return contentLoader.getNewContent(button, containerId, dataUrl);
+        contentLoader.getNewContent(button, containerId, dataUrl);
+        return console.log("Module " + moduleId + " is rendered...");
       }
     };
   };

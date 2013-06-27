@@ -1,4 +1,4 @@
-define(["loadHtmlContent", "GoogleMap"], function (contentLoader, GoogleMap) {
+define(["loadHtmlContent", "GoogleMap"], function (contentLoader) {
 
     var geocoder = new google.maps.Geocoder();
 

@@ -33,16 +33,16 @@ define([], function () {
         var userPasswordValue = userPassword.value;
         var userPasswordLength = userPassword.value.length;
 
-        if (userNameValueLength == 0 || userPasswordLength == 0) {
-            if (userNameValueLength == 0) {
+        if (userNameValueLength === 0 || userPasswordLength === 0) {
+            if (userNameValueLength === 0) {
                 console.log('username is empty');
             }
-            if (userPasswordLength == 0) {
+            if (userPasswordLength === 0) {
                 console.log('password is empty');
             }
-        } else if (userNameValue != 'admin' || userPasswordValue != '1234') {
+        } else if (userNameValue !== 'admin' || userPasswordValue !== '1234') {
             console.log('username or password is invalid');
-        } else if (userNameValue == 'admin' && userPasswordValue == '1234') {
+        } else if (userNameValue === 'admin' && userPasswordValue === '1234') {
             showAuthorizedSection();
         }
     }
