@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<!-- Start: page  Stats-->
+		<div data-role="page" data-add-back-btn="true" id="Stats">
+			<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="persistent-header">
+				<a href="login.html" data-icon="chevron-down" data-iconpos="right" class="ui-btn-right login-btn" data-rel="dialog">Login</a>
+				<a href="#LogoutPopupDialog" data-icon="chevron-down" data-iconpos="right" class="ui-btn-right logout-btn" data-rel="popup" style="display: none">Logout</a>
+				<h1><img class="header-logo" src="../assets/img/logo-20x20.png" alt="Save Sick Child Logo"/></h1>
+			</div><!-- /header -->
+			<div data-role="content" >
+				<div id="charts-container">
+					<svg id="svg-container"  xmlns="http://www.w3.org/2000/svg"></svg>
+				</div>
+			</div><!-- /content -->
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-id="persistent-footer">
+				<div data-role="navbar" class="ssc-navbar">
+					<ul>
+						<li>
+							<a href="about.html" data-iconshadow="false" data-icon="info-sign" data-transition="slideup">About</a>
+						</li>
+						<li>
+							<a href="donate.html" data-iconshadow="false" data-icon="heart" data-transition="slideup">Donate</a>
+						</li>
+						<li>
+							<a href="#" data-iconshadow="false" data-icon="bar-chart" class="ui-state-persist">Stats</a>
+						</li>
+						<li>
+							<a href="events.html" data-iconshadow="false" data-icon="map-marker" data-transition="slideup">Events</a>
+						</li>
+						<li>
+							<a href="media.html" data-iconshadow="false" data-icon="film" data-transition="slideup">Media</a>
+						</li>
+						<li>
+							<a href="share.html" data-iconshadow="false" data-icon="share" data-transition="slideup">Share</a>
+						</li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+			<div data-role="popup" id="LogoutPopupDialog" data-transition="slidedown" data-position-to="window">
+				<div data-role="content" data-theme="d" class="ui-corner-bottom ui-content ui-body-d" role="main">
+					<h3 class="ui-title">Are you sure you want to logout?</h3>
+					<a href="#" data-role="button" data-inline="true" data-rel="back">Cancel</a>
+					<a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="a" class="logout-confirm-btn">Logout</a>
+				</div>
+			</div>
+		</div><!-- /page -->
+	</body>
+</html>
