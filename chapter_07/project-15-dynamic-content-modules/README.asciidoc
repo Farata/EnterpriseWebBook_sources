@@ -1,6 +1,6 @@
-= project-16-modules
+= Chapter 7: Save Sick Child, Dynamic Modules app
 
-An awesome requirejs app
+An example of modularized application
 
 == Getting Started
 
@@ -38,13 +38,6 @@ Running `grunt` by itself will run through all of the steps of linting
 the javascript, building out dependencies and ultimately creating
 `/dist/require.js`.
 
-== Working with the scaffolded app
-
-There's just enough to in place to get you going. Go ahead and make your
-changes to `index.htm`. You'll start your javascript work in
-`app/main.js` by requiring your first modules. Past that, well, the
-world is your oyster.
-
 === Tests
 
 The test directory uses `qunit`, which is run using phantomJS in the
@@ -61,6 +54,6 @@ pieces required to run the application in its built state is running
 `grunt`.
 
 If you're using a webserver like apache or nginx, you'll want to create
-a redirect from `/components/requirejs/require.js` to
+a redirect from `/bower_components/requirejs/require.js` to
 `/dist/require.js`. (_Note: this is exactly what `grunt preview-live`
 does_)

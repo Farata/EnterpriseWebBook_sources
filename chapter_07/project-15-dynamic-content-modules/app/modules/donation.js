@@ -19,14 +19,15 @@ define(["showHideDiv", "loadHtmlContent"], function (showHide, loadHtml) {
         }
 
         //uncheck selected radio buttons if custom amount was choosen
+        function donateFormOnClick(){
+            customAmount.value = '';
+        }
         function onCustomAmountFocus() {
             for (var i = 0; i < donateForm.length; i++) {
-                if (donateForm[i].type == 'radio') {
-                    donateForm[i].onclick = function () {
-                        customAmount.value = '';
-                    }
+                if (donateForm[i].type === 'radio') {
+                    donateForm[i].onclick = donateFormOnClick;
                 }
-                if (donateForm[i].type == 'radio' && donateForm[i].checked == true) {
+                if (donateForm[i].type === 'radio' && donateForm[i].checked === true) {
                     checkedInd = i;
                     donateForm[i].checked = false;
                 }

@@ -1,7 +1,7 @@
 {
   "name": "project-16-modules",
-  "description": "An awesome requirejs app",
-  "version": "0.0.0",
+  "description": "Chpter 7: Large-Scale JavaScript Projects",
+  "version": "0.0.1",
   "engines": {
     "node": ">= 0.8.0"
   },
@@ -9,9 +9,9 @@
     "test": "grunt qunit"
   },
   "author": {
-    "name": "Author Name",
-    "email": "email@domain.com",
-    "url": "http://bower.io/"
+    "name": "Farata Systems",
+    "email": "info@faratasystems.com",
+    "url": "http://enterprisewebbook.com"
   },
   "licenses": [
     {

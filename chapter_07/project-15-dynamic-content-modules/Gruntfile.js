@@ -48,7 +48,7 @@ module.exports = function (grunt) {
                 options: {
                     jshintrc: 'app/.jshintrc'
                 },
-                src: ['app/**/*.js']
+                src: ['app/**/*.js', '!app/order.js']
             },
             test: {
                 options: {
@@ -120,7 +120,6 @@ module.exports = function (grunt) {
 
     // Default task.
     grunt.registerTask('default', ['jshint', 'qunit', 'clean', 'requirejs', 'concat', 'uglify']);
-    grunt.registerTask('default2', ['qunit', 'clean', 'requirejs', 'concat', 'uglify']);
     grunt.registerTask('preview', ['connect:development']);
-    grunt.registerTask('preview-live', ['default2', 'connect:production']);
+    grunt.registerTask('preview-live', ['default', 'connect:production']);
 };

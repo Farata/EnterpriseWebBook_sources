@@ -11,10 +11,10 @@ require.config
     'what-we-do': 'modules/what-we-do',
     'where-we-work': 'modules/where-we-work',
     'way-to-give': 'modules/way-to-give'
-    'components': "../components",
-    'jquery': '../components/jquery/jquery'
+    'bower_components': "../bower_components",
+    'jquery': '../bower_components/jquery/jquery'
     'main': 'main',
-    'GoogleMap': '../components/GoogleMap/dist/GoogleMap'
+    'GoogleMap': '../bower_components/requirejs-google-maps/dist/GoogleMap'
 
 unless window.requireTestMode
   require ["main"], ->

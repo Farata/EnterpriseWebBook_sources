@@ -10,20 +10,21 @@ define(["loadHtmlContent"], function (contentLoader) {
 
         // calculate the total data
         var totalData = 0;
-        for (var i = 0; i < data.length; i++)
+        for (var i = 0; i < data.length; i++){
             //verifying that data is numeric
-            if (typeof data[i] == 'number') {
+            if (typeof data[i] === 'number') {
                 totalData += data[i];
             }
+        }
 
         // Sector size
         var angles = [];
-        for (var i = 0; i < data.length; i++) {
+        for (i = 0; i < data.length; i++) {
             angles[i] = data[i] / totalData * Math.PI * 2;
         }
         // Loop through sectors.
         var startAngle = 0;
-        for (var i = 0; i < data.length; i++) {
+        for (i = 0; i < data.length; i++) {
             // End of the sector
             var endAngle = startAngle + angles[i];
             var x1 = centerX + pieRadius * Math.sin(startAngle);
@@ -83,26 +84,6 @@ define(["loadHtmlContent"], function (contentLoader) {
             // Add text to the chart
         }
 
-    }
-
-    function loadData(dataUrl, container) {
-        var xhr = new XMLHttpRequest();
-        xhr.overrideMimeType("application/json");
-        xhr.open('GET', dataUrl, true);
-
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4) {
-                if (xhr.status == 200) {
-                    var jsonData = xhr.responseText;
-
-                    //parse jsoon data
-
-                } else {
-                    console.log(xhr.statusText);
-                }
-            }
-        }
-        xhr.send(null);
     }
 
     contentLoader.loadJsonContent(dataUrl, function (jsonData) {

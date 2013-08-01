@@ -10,5 +10,5 @@ define([], function () {
             }
             showDiv.style.display = "block";
         }
-    }
+    };
 }); 
