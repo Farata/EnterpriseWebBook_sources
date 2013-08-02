@@ -7,4 +7,3 @@ define ->
       mediator
     setMediator: (m) =>
       mediator = m
-

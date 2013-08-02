@@ -2,31 +2,10 @@
 define(function () {
     var Mediator;
     return Mediator = (function () {
-        var components, instance;
+        var components;
 
         function Mediator() {
         }
-
-        Mediator = function () {
-            if (instance !== null) {
-                throw new Error("Cannot instantiate more than one Mediator, use MySingleton.getInstance()");
-            }
-            return this.initialize();
-        };
-
-        instance = null;
-
-        Mediator.prototype = {
-            initialize: function () {
-            }
-        };
-
-        Mediator.getInstance = function () {
-            if (instance === null) {
-                instance = new Mediator();
-            }
-            return instance;
-        };
 
         components = {};
 
@@ -64,8 +43,6 @@ define(function () {
                 }
             }
         };
-
-        Mediator.getInstance();
 
         return Mediator;
 
