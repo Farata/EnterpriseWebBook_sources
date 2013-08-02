@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "OrderPanel.js",
+  "sourceRoot": "",
+  "sources": [
+    "OrderPanel.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA,IAAA,8EAAA;;AAAA,CAAA,EAAO,GAAP,GAAO;CACL,KAAA,cAAA;CAAA,CAAA,CAAW,KAAX;SACM;;;;;CACJ;;CAAA,EAAe,EAAA,IAAC,IAAhB;CACU,EAAR,EAAA,EAAO,MAAP,MAAa;CADf,IAAe;;CAAf,EAEa,MAAA,EAAb;CAAa,YACX;CAHF,IAEa;;CAFb,EAIa,MAAC,EAAd;CAAa,EACA,KAAX,KAAA;CALF,IAIa;;CAJb;;CAHG;CAAA"
+}
