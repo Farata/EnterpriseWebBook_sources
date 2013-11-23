@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Make sure the latest version of IE is used and if already installed, IE should use the Google Chrome Frame rendering engine -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Save The Child | Home Page</title>
+		<link rel="stylesheet" href="assets/css/styles.css">
+	</head>
+	<body>
+		<div id="main-container">
+			<header>
+				<h1 id="logo">Save The Child</h1>
+				<nav id="top-nav">
+					<ul>
+						<li id="login">
+							<div id="authorized">
+								<span class="icon-user authorized-icon"></span>
+								<span id="user-authorized">admin</span>
+								<br/>
+								<a id="profile-link" href="javascript:void(0);">profile</a> | <a id="logout-link" href="javascript:void(0);">logout</a>
+							</div>
+
+							<form id="login-form">
+								<span class="icon-user login-form-icons"></span>
+								<input id="username" name="username" type="text" placeholder="username" autocomplete="off" />
+								&nbsp; <span class="icon-locked login-form-icons"></span>
+								<input id="password" name="password" type="password" placeholder="password"/>
+							</form>
+							<a id="login-submit" href="javascript:void(0)">login &nbsp;<span class="icon-enter"></span> </a>
+							<a id="login-link" class="show-form" href="javascript:void(0)">login &nbsp;<span class="icon-enter"></span> </a>
+
+						</li>
+						<li id="top-menu-items">
+							<ul>
+								<li>
+									<a href="javascript:void(0)">Who We Are</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">What We Do</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">Where We Work</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">Way To Give</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<div id="main" role="main">
+				<section id="main-top-section">
+					<div id="donation-address">
+						<p class="donation-address">
+							Lorem ipsum dolor sit amet, consectetur e magna aliqua.
+							Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							Excepteur sint occaecat cupidatat non proident.
+						</p>
+						<button class="donate-button" id="donate-button">
+							<span class="donate-button-header">Donate Now</span>
+							<br/>
+							<span class="donate-2nd-line">Children can't wait</span>
+						</button>
+
+					</div>
+					<div id="donate-form-container">
+						<h3>Make a donation today</h3>
+
+						<form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_xclick">
+							<input type="hidden" name="business" value="email-registered-in-paypal@site-url.com">
+							<input type="hidden" name="item_name" value="Donation">
+							<input type="hidden" name="currency_code" value="USD">
+							<div class="donation-form-section">
+								<label class="donation-heading">Please select or enter
+									<br/>
+									donation amount</label>
+								<input type="radio" name = "amount" id="d10" value = "10"/>
+								<label for = "d10">10</label>
+								<br/>
+								<input type="radio" name = "amount" id = "d20" value="20" />
+								<label for = "d20">20</label>
+								<br/>
+								<input type="radio" name = "amount" id="d50" checked="checked" value="50" />
+								<label for="d50">50</label>
+								<br/>
+								<input type="radio" name = "amount" id="d100" value="100" />
+								<label for="d100">100</label>
+								<br/>
+								<input type="radio" name = "amount" id="d200" value="200" />
+								<label for="d200">200</label>
+								<label class="donation-heading">Other amount</label>
+								<input id="customAmount" name="amount" value="" type="text"  autocomplete="off" />
+							</div>
+							<div class="donation-form-section">
+								<label class="donation-heading">Donor information</label>
+								<input type="text" id="full_name" name="full_name" placeholder="full name *" required>
+								<input type="email" id="email_addr" name="email_addr" placeholder="email *" required>
+								<input type="text" id="street_address" name="street_address" placeholder="address">
+								<input type="text" id="city" name="scty" placeholder="city">
+								<input type="text" id="zip" name="zip" placeholder="zip/postal code">
+								<select name="state" id="state">
+									<option value="" selected="selected"> - State - </option>
+									<!-- AJAX will load the rest of content  (HTML in this example) -->
+								</select>
+								<select name="country" id="counriesList">
+									<option value="" selected="selected"> - Country - </option>
+									<!-- AJAX will load the rest of content   (HTML in this example) -->
+								</select>
+							</div>
+							<div class="donation-form-section make-payment">
+								<h4>We accept Paypal payments</h4>
+								<p>
+									Your payment will processed securely by <b>PayPal</b>. PayPal employ industry-leading encryption and fraud prevention tools.
+									Your financial information is never divulged to us.
+								</p>
+
+								<button class="donate-button donate-button-submit">
+									<span class="donate-button-header">Donate Now</span>
+									<br/>
+									<span class="donate-2nd-line">Children can't wait</span>
+								</button>
+								<a id="donate-later-link" href="javascript:void(0);">I'll donate later <span class="icon-cancel"></span></a>
+							</div>
+						</form>
+					</div>
+				</section>
+				<section id="main-bottom-section">
+					Main content. Bottom section.
+				</section>
+			</div>
+			<footer>
+				<section id="temp-project-name-container">
+					<b>project 04-1</b>: Make Donation Section | AJAX-HTML
+				</section>
+				<section id="social-icons">
+					<a href="javascript:void(0)" title="Our Facebook page"><span aria-hidden="true" class="icon-facebook"></span></a>
+					<a href="javascript:void(0)" title="Our Google Plus page"><span aria-hidden="true" class="icon-gplus"></span></a>
+					<a href="javascript:void(0)" title="Our Twitter"><span aria-hidden="true" class="icon-twitter"></span></a> &nbsp; <a href="javascript:void(0)" title="RSS feed"><span aria-hidden="true" class="icon-feed"></span></a>
+					<a href="javascript:void(0)" title="Email us"><span aria-hidden="true" class="icon-mail"></span></a>
+				</section>
+			</footer>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>
