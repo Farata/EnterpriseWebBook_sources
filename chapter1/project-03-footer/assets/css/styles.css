@@ -1,0 +1,305 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+ul li, ol li {
+	list-style: none;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+/* Links */
+body {
+	font: .81em/150% "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	color: #444;
+}
+a {
+	color: #6685CC;
+	text-decoration:none;
+}
+a:visited {
+	color: #551a8b;
+}
+a:hover {
+	color: #B8CC66;
+}
+a:focus {
+	outline: none;
+}
+/* Main content
+ #main-container is wrapper for all page content
+ */
+#main-container {
+	width: 980px;
+	margin: 0 auto;
+}
+
+header {
+	height: 80px;
+}
+/* Logo and h1 heading */
+header h1#logo {
+	background: url(../img/logo.png) no-repeat;
+	width: 300px;
+	height: 80px;
+	float: left;
+	margin-top: 30px;
+	text-indent: -9999px;
+}
+
+/* ------------------------- login section */
+
+.login-form-icons {
+	font-size: 1.4em;
+	color: #63747e;
+	vertical-align: middle;
+}
+
+/* intup fields placeholders */
+::-webkit-input-placeholder {
+	color: #ccc;
+}
+:-moz-placeholder {
+	color: #ccc;
+}
+:-ms-input-placeholder {
+	color: #ccc;
+}
+
+li#login input:focus::-webkit-input-placeholder {
+	/*color: transparent;*/
+	color: #ebebeb;
+	outline: none;
+}
+li#login input:focus:-moz-placeholder {
+	/*color: transparent;*/
+	color: #ebebeb;
+	outline: none;
+}
+
+li#login input {
+	width: 122px;
+	padding: 4px;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+li#login, li#top-menu-items {
+	clear: both;
+}
+li#login {
+	text-align: right;
+	height: 40px;
+	padding-top: 10px;
+	margin-bottom: 12px;
+}
+li#login form {
+	float: left;
+	display: none;
+	margin-top: 2px;
+}
+
+/* show login form link*/
+li#login a.show-form {
+	font-size: 0.9em;
+	float: right;
+	width: 100px;
+	text-align: center;
+	padding: 3px 12px 2px 12px;
+	margin-right: 2px;
+	display: block;
+	position: relative;
+	border: 1px solid #aaa;
+	border-radius: 90px;
+	-moz-border-radius: 90px;
+	-webkit-border-radius: 90px;
+}
+li#login a.show-form:link {
+	background: #fff;
+	color: #999;
+}
+li#login a.show-form:link span {
+	color: #999;
+}
+li#login a.show-form:hover {
+	color: #333;
+}
+li#login a.show-form:hover span {
+	color: #333;
+}
+
+/* login form submit link */
+a#login-submit {
+	display: none;
+	width: 100px;
+	float: left;
+	padding: 3px 12px;
+	margin-left: 20px;
+	text-align: center;
+	border-radius: 90px;
+	-moz-border-radius: 90px;
+	-webkit-border-radius: 90px;
+}
+a#login-submit:link {
+	background: #555;
+}
+a#login-submit:hover {
+	background: #B8CC66
+}
+
+#authorized {
+	display: none;
+	width: 140px;
+	height: 40px;
+	float: right;
+	text-align: left;
+	line-height: 17px;
+	position: relative;
+	top: -7px;
+}
+#user-authorized {
+	font-weight: bold;
+	color: #666;
+	font-size: 1em;
+}
+.authorized-icon {
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	color: #999;
+	display: block;
+	float: left;
+	position: relative;
+	top: 9px;
+}
+#authorized a {
+	display: inline;
+	background: none;
+	font-size: 0.9em;
+	padding: 0;
+}
+#authorized a:link {
+	color: #119bf6;
+}
+#authorized a:hover {
+	color: #555;
+}
+/* ------------------------------ Navigation menu */
+nav {
+	float: right;
+}
+li#top-menu-items ul li {
+	float: left;
+	margin-left: 1px;
+}
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 7px 12px;
+	border-radius: 4px;
+}
+nav ul li a:link {
+	background: #6685CC;
+	color: #fff;
+}
+nav ul li a:hover {
+	background: #B8CC66;
+	color: #fff;
+}
+/* ------------------------- Main content */
+div#main {
+	clear: both;
+	min-height: 480px;
+}
+/* Main top section */
+#main-top-section {
+	width: 100%;
+	height: 320px;
+	margin-top: 18px;
+}
+/* Main botttom section */
+#main-bottom-section {
+	width: 100%;
+	height: 260px;
+}
+
+/* Footer */
+footer {
+	border-top: 1px dotted #555;
+	text-align: right;
+	padding-top: 20px;
+}
+footer #temp-project-name-container {
+	float: left;
+}
+footer #social-icons {
+	float: right;
+}
+footer #social-icons a {
+	font-size: 28px;
+}
+/* Icon Fonts */
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-user:before {
+	content: "\21";
+}
+.icon-locked:before {
+	content: "\22";
+}
+.icon-enter:before {
+	content: "\23";
+}
+.icon-facebook:before {
+	content: "\24";
+}
+.icon-gplus:before {
+	content: "\25";
+}
+.icon-feed:before {
+	content: "\26";
+}
+.icon-twitter:before {
+	content: "\27";
+}
+.icon-cancel:before {
+	content: "\28";
+}
+.icon-mail:before {
+	content: "\29";
+}

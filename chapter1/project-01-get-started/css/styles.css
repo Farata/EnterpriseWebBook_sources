@@ -1,0 +1,33 @@
+/* Navigation menu */
+nav {
+	float: right
+}
+nav ul li {
+	list-style: none;
+	float: left;
+}
+nav ul li a {
+	display: block;
+	padding: 7px 12px;
+}
+
+/* Main content 
+ #main-container is a wrapper for all page content
+ */
+#main-container {
+	width: 980px;
+	margin: 0 auto;
+}
+div#main {
+	clear: both;
+}
+
+/* Footer */
+footer {
+	/* Set background color just to make the footer standout*/
+	background: #eee;
+	height: 20px;
+}
+footer #temp-project-name-container {
+	float: left;
+}
