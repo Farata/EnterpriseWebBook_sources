@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Save The Child | Responsive Carousel</title>
+		<meta name="description" content="Build Responsive Layout. Step 2. Donation Section">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- responsive-carousel CSS files -->
+		<link rel="stylesheet" href="assets/css/responsive-carousel.css" />
+		<link rel="stylesheet" href="assets/css/responsive-carousel.slide.css" />
+		<link rel="stylesheet" href="assets/css/responsive-carousel.fade.css" />
+		<link rel="stylesheet" href="assets/css/responsive-carousel.flip.css" />
+		<link rel="stylesheet" href="assets/css/demostyles.css" />
+	</head>
+	<body>
+		<div id="wrapper-container">
+			<header class="clearfix">
+				<h1 id="logo"><img src="assets/img/logo.png" /></h1>
+				<nav>
+					<ul>
+						<li>
+							<a href="javascript:void(0)">Who We Are</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">What We Do</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Where We Work</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Way To Give</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="login" class="login-box">
+					<a id="login-link" class="show-form" href="javascript:void(0)">login <span class="icon-enter"></span> </a>
+				</div>
+			</header>
+			<div id="main-content" role="main">
+				<section id="main-top-section" class="row breakpoint-480">
+					<!-- responsive-carousel -->
+					<div id="image-carousel" class="carousel carousel-flip" data-transition="flip">
+						<div>
+							<img src="assets/img/slides/slide-1.jpg" />
+						</div>
+						<div>
+							<img src="assets/img/slides/slide-2.jpg" />
+						</div>
+						<div>
+							<img src="assets/img/slides/slide-3.jpg" />
+						</div>
+					</div>
+					<!-- // responsive-carousel -->
+				</section>
+				<!-- quick change responsive-carousel transitions type-->
+				<section id="transitions-trigger">
+					<form action="">
+						<span>
+							<input type="radio" name="transitions" value="fade">
+							Fade transitions </span>
+						<span>
+							<input type="radio" name="transitions" value="slide" >
+							Slide transitions </span>
+						<span>
+							<input type="radio" name="transitions" value="flip" checked="checked">
+							Flip transitions </span>
+					</form>
+				</section>
+				<section id="main-bottom-section" class="row breakpoint-640">
+					<div id="charts-container" class="four-column cell">
+						<div id="charts">
+							Charts module
+						</div>
+					</div>
+					<div id="map-container" class="four-column cell">
+						<div id="map">
+							Map  module
+						</div>
+					</div>
+					<div id="video-container" class="four-column cell">
+						<div id="video">
+							Video  module
+						</div>
+					</div>
+				</section>
+			</div>
+			<!--! end of #main-content -->
+			<footer class="row no-breakpoint">
+				<div id="footer-content" class="four-column right">
+					footer's content
+				</div>
+			</footer>
+			<!-- Temp project description-->
+			<p class="temp-project-description">
+				<b> Using jQuery | Responsive Slider</b>
+			</p>
+			<!-- end of Temp project description-->
+		</div>
+		<!--! end of #wrapper-container -->
+		<script src="js/libs/jquery-1.9.0.min.js"></script>
+		<!-- There was an issue of compatibility of this plugin and jquery-1.9.0.
+		Original production version of plugin suppose to use jQuery version 1.7.2 
+		 and use live() method. But using of live() method in plugin  
+		 was causing error messages if  used with jquery-1.9.0 (might have been fixed by now).
+		The live() method was deprecated even in 1.7.2 version.
+		I've replaced live() method  by .on() method in responsive-carousel.min.js 
+		and other plugin's js files.
+		responsive-carousel.min.mod.js - is a modified version.
+		-->
+		<!-- <script src="js/plugins/responsive-carousel/responsive-carousel.min.js"></script> -->
+		<script src="js/plugins/responsive-carousel/responsive-carousel.min.mod.js"></script>
+		<script src="js/plugins/responsive-carousel/responsive-carousel.flip.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

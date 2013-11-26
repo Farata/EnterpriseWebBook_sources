@@ -1,0 +1,27 @@
+$dotted_border: 1px dotted #555;
+
+.app-viewport {
+  background: white;
+}
+
+.main-content {
+  background: url("images/bg-1.png") no-repeat;
+}
+
+.donate-panel {
+  background: url("images/child-1.jpg") no-repeat right bottom, url("images/bg-2.png") no-repeat 90px bottom;
+  border-bottom: $dotted_border;
+}
+
+.bottom-panel {
+  border-bottom: $dotted_border;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+h3, p {
+  margin: 5px 0 0;
+  padding: 0;
+}

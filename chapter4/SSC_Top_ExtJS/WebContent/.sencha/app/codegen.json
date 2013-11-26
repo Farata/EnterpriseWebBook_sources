@@ -1,0 +1,99 @@
+{
+  "sources": {
+    "theme.html.tpl.merge": {
+      "e6050d3bd63ff241bbbd49585da9dbc8d3830789": "eJydVMFu2zAMvecrWJ+2g+y03WFI7VyyDtswYMWSHXZUZCZSI0uexDgJiv77JNtN3S7AigiGAYt875HPovKLTz9mi993tyCp0tNRfsHYCABmtj44tZYE78R7uBpfXrHwuk5hjkZIDl+NSEeMBUCPk8jLaURCToo0Tm/3BN/msJBYIXzhzqD3edbFurwKiQdZqhn+2aqmSGbWEBpii0ONCYjuq0gI95RFmRsI0s4jFb8Wn9nHZDrqiPqa4bvlJXCtwUVChyVoZTYeuCnBC6dq8m1erLsFxnBI1kXi6aDRS0RKgIJ8ryq8T0A6XBUJ7nlVa0zbrawn6FiHiHve8G43Ae9EkaRpFp6HleMV7qzb3HGSj1lIZSU26b1PpnnWAd7OubSWPDlev8KfsIMkwlwrgS4Y6vC0D2+QdGhKdP/Xi/ZX3KgVeuqdl9aR2J6h2VtXc7Hha/Q/UT+bR/FcsSX3mHnufdb/nuxJ+0xnz5E8Nnimpth6stVJa9tj2THFlcYy1mjQcbIOHo6BuHaqJDmB6/F4XO9vjqHH0TM8pKyRWJwsrgLLK4aKu7UyE7h8QTDg/jD+J1Jbr0jZgApzxEk1+DJuG3QrbXcTaJRXS43Dytoes77JPBvcIUtbHkDoYHOcvEHT0aMYbPPbq+cvqst4Bw\u003d\u003d"
+    },
+    "build.properties.merge": {
+      "9b4673b03b114f13c1c2915ca4d24a364edfc1ea": "eJylVk1v2zAMvedXEOuAbUCt3gv4MGA779JjLrJNxwpkyZDkNsGQ/z7S8oecOMW6BQXiSI9PFN8j3QfI//6ze4AfFowNgJUKEBrloVYaBQBt0d/LtAIV1sqgh87ZDl1Q9Nh7rKA4M67ola4y1XZanFr9CG+NKhug2NAgFNIj8B4BbQ3SgOw6rUoZlDU+xjJvid4T5LvW0NpK1ROC1nxjewIVCK2sEIKNUXwY8VXwBNZxHtqWUoskR2WGFJIDv3gGOkuXrpTDMlh3FrTykbLtPoh/gFfplO09HD3lWtq2o5q6pJgfTUC6gxdoXpWzpkUTcqKq+pIvuIulocvln3/TxcX8+/JEC1eBl92I56QcKUAMYiHLs3OvNhABfVDmEEvx0iApnFS9JI1Zq0FFMgnpVTbSHBAOaNBJPYpuu1ngnvwiPeCp1H1FzIPryHvOtoOCHgO5kk6C2rpWkmNPHYnnweCbZmcSCe0ASiZyh54v9xiXTpLMh8+ESD7Dr3gxzjtaLb35fsbHpHBvYFnLjGzRd7LE/Ocp7Keqb1Pdbi71m7ZugrIKi/6wz2upPV7B5vC4TKrY3lH/jKonis9bu6mdR53O76jEBVem68PQXLYP/NhJ2hlmATENvT8212hn/m4JL+ArHp5ps8KTkL47PY7PR9+BEAK+7diVTCe4iHncbUKrOcfl7PnABc+/RldPfk6pLmM8Z2xXDLEiKce6K9YsCQ2xHH3KUWrpPVV6SF1qnU0LR3+F2DrolmNpQM/y4zgIUycE1+M2aPLBXYR17JktM27jrn3JqKnv30lphkzx0bT/PCY91YcHpff/MyNJVJJQ8PtnNM1Q8IxUW22KodNGyLR4WQg85bHlmHX8ZcDNQa4vzuug0ppaHYQrFmaunUOdz116hzklfieZke6y4p+0werOZLg6M5624zBSQbAUN2Nl3i03NpOZM8Pi1ZP2nUqUUMUxMs24PMuCo/EKWVZYx2+ELKNpXmKs3jjUk9fccDRn+zTurXA3JtgC3ZMjJVnESKK2BLkivaxi7llqfdJgKLL9r1gSntBcKv7m+fTJo6GJDTU1DP17g5/mETy25rA6F3T3B/ZmfAg\u003d"
+    },
+    "app.js.tpl.merge": {
+      "ca9cfeb9d3913435880b586ce4603fc886054b52": "eJzdVk1v4jAQvedXjJBQQsuGPdOyW6nlUGm3XanVSivEwU0GsOrYWX8AFcp/37HNR7qFQ6We6kuwx+955r1JzKbLq1pp+4sVz2yOWaGq3KAsFix3lotetxmcJUDjccENzLhAoOccJWpmsQQmS3B1GX4/vcBDgMJ1VebwRzkomAQsuQW7hzMT+CRiSZiZ0vCinAZW14IXzHIl+/DkPAINBrCBFRcCFmyJYBU8IVSo5+HAQHU4FFYLlEDH1aiJuTJQqBJ36RI1WGaeDRhXLCiRfUDOKZ9VIKsIIEyfgNJqJQRqA5TjkuPKhGrDEdpJ6VGdqJXPnmSYa1ZiJ08C0W2JTIgXoLCco/GZH0RYKSdKX4ngFd/pWCljKaKfD+FSSQxsXIIiRTTUghXElu1KuD7k2cvhdtZWg9SXyka1gsqBapeQP9KLezDTi9X38gW9a61KV5Bh0IkMJMmMPLIdKoRZTxj4wmZvpy9Ro1GCfKqYdL78PDkbJMlgADf3cHf/CDfjH+PHMXyJWpRcY2H5MjSVxr+O5rEnWlXUsTWDgl6dnOiutpvhahu9X6LWvESTJOO1zVvdlG1iv7EKh5BuKHJHP5u0n1zaWgCfjTq09jPY3vnW6oHhZNMNUz+WTDg0eYzACLKZk0XoqCyu9WCz3+yHLyJbMk1lWdo/mfapEG09NgJyQynaLO2nPdKclr9e0OMy7soFyrldXMD5Of+fObTDLAv7Jnx6LOwHnZvXziyyjS8dhrADNL2LN4AmOT0jIqelfxxwTS/bKrLXDs4hTbfU3SZoSxqMOlVbWT/SkFCTbiaQrbkscQ2jEawL5aTtwXdioWRJFpg2lwOiicgp+RVmbdd++7dySx3e0CEcMS2+u688C0vvsCzs/zyOBd1OGbZsifrBfj1YRR+ILbcJk6OOxdBry+LaOzyLgM9jWhTvlGumLe0H29a6Y7YHtG7Howa2b89XLrYC77Cyhfo8frZUPWVq8Ub4D3A2zJiz6lojXfv+W+D/AQ7BaoeJL/Mfnl7s3A\u003d\u003d"
+    },
+    "app.json.tpl.merge": {
+      "e5f71b1bb6813850ab3a32f5d235c01c12678423": "eJyr5lIAAqW8xNxUJSsFpWoQo1aJqxYAS3MGqQ\u003d\u003d"
+    }
+  },
+  "targets": {
+    "sass/example/theme.html": {
+      "source": "theme.html.tpl.merge",
+      "version": "e6050d3bd63ff241bbbd49585da9dbc8d3830789",
+      "parameters": {
+        "frameworkName": "ext",
+        "frameworkPath": "ext",
+        "senchadir": ".sencha",
+        "controllerFileName": "Main",
+        "appModels": "",
+        "viewFileName": "Main",
+        "appControllers": "",
+        "appViews": "",
+        "uniqueId": "edace696-a87d-42f2-bf3d-2645d3014f80",
+        "appName": "SSC",
+        "controllerName": "Main",
+        "viewName": "Main",
+        "themeName": "default",
+        "packagesRelPath": "packages",
+        "name": "SSC",
+        "library": "all",
+        "appStores": ""
+      }
+    },
+    "app/app.js": {
+      "source": "app.js.tpl.merge",
+      "version": "ca9cfeb9d3913435880b586ce4603fc886054b52",
+      "parameters": {
+        "appName": "SSC",
+        "frameworkPath": "ext",
+        "appModels": "",
+        "appStores": "",
+        "appControllers": "Donate",
+        "appViews": "DonateForm,Header,Viewport"
+      }
+    },
+    ".sencha/app/build.properties": {
+      "source": "build.properties.merge",
+      "version": "9b4673b03b114f13c1c2915ca4d24a364edfc1ea",
+      "parameters": {
+        "frameworkName": "ext",
+        "frameworkPath": "ext",
+        "senchadir": ".sencha",
+        "controllerFileName": "Main",
+        "appModels": "",
+        "viewFileName": "Main",
+        "appControllers": "",
+        "appViews": "",
+        "uniqueId": "edace696-a87d-42f2-bf3d-2645d3014f80",
+        "appName": "SSC",
+        "controllerName": "Main",
+        "viewName": "Main",
+        "themeName": "default",
+        "packagesRelPath": "packages",
+        "name": "SSC",
+        "library": "all",
+        "appStores": ""
+      }
+    },
+    "app.json": {
+      "source": "app.json.tpl.merge",
+      "version": "e5f71b1bb6813850ab3a32f5d235c01c12678423",
+      "parameters": {
+        "frameworkName": "ext",
+        "frameworkPath": "ext",
+        "senchadir": ".sencha",
+        "controllerFileName": "Main",
+        "appModels": "",
+        "viewFileName": "Main",
+        "appControllers": "",
+        "appViews": "",
+        "uniqueId": "edace696-a87d-42f2-bf3d-2645d3014f80",
+        "appName": "SSC",
+        "controllerName": "Main",
+        "viewName": "Main",
+        "themeName": "default",
+        "packagesRelPath": "packages",
+        "name": "SSC",
+        "library": "all",
+        "appStores": ""
+      }
+    }
+  }
+}

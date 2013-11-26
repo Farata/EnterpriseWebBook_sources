@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Hello jQuery</title>		
+	</head>
+	<body>
+		<script src="js/libs/jquery-1.9.0.min.js"></script>
+		<script>
+			$(function(){
+				$("body").append("<h1>Hello World!</h1>");
+			    
+				$("h1").dblclick(function(){
+					$("body").append("Hey, you clicked on the header!");				
+				})
+			});	
+			
+		</script>
+	</body>
+</html>

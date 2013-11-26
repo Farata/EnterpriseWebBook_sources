@@ -1,0 +1,12 @@
+.app-viewport {
+  background: white;
+}
+
+.main-content {
+  background: url("images/bg-1.png") no-repeat;
+}
+
+.donate-panel {
+  background: url("images/child-1.jpg") no-repeat right bottom, url("images/bg-2.png") no-repeat 90px bottom;
+  border-bottom: 1px dotted #555;
+}

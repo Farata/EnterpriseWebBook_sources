@@ -1,0 +1,419 @@
+/* reset start */
+/* http://meyerweb.com/eric/tools/css/reset/
+ v2.0 | 20110126
+ License: none (public domain)
+ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Meyer's reset end */
+
+/* apply a natural box layout model to all elements */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a:active, a:hover {
+	outline: 0;
+}
+
+/* reset end */
+
+/* List of most recently and popular CSS Reset scripts: http://www.cssreset.com */
+
+/* Start of fluid grid styles */
+
+.row:before, .clearfix:before, .row:after, clearfix:after {
+	content: "";
+	display: table;
+}
+
+.row:after, clearfix:after {
+	clear: both;
+}
+
+.row, .clearfix {
+	padding: 0 0 0 0.5em;
+	zoom: 1;
+}
+
+.breakpoint-480 .cell, .breakpoint-640 .cell, .breakpoint-768 .cell, .breakpoint-960 .cell, .no-breakpoint .cell {
+	float: left;
+	padding: 0 0.5em 0 0;
+}
+
+.one-column {
+	width: 8.333%;
+}
+.two-column {
+	width: 16.666%;
+}
+.three-column {
+	width: 24.999%;
+}
+.four-column {
+	width: 33.332%;
+}
+.five-column {
+	width: 41.665%;
+}
+.six-column {
+	width: 49.998%;
+}
+.seven-column {
+	width: 58.331%;
+}
+.eight-column {
+	width: 66.664%;
+}
+.nine-column {
+	width: 74.997%;
+}
+.ten-column {
+	width: 83.33%;
+}
+.eleven-column {
+	width: 91.663%;
+}
+.twelve-column {
+	width: 100%;
+	float: left;
+}
+
+.row.nested {
+	padding: 0;
+	margin-right: -0.5em
+}
+
+/*End of fluid grid styles. See mebreakpoints below (Media Queries section) */
+
+body {
+	font: .81em/150% "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	color: #444;
+}
+a {
+	color: #6685CC;
+	text-decoration: none;
+}
+a:visited {
+	color: #551a8b;
+}
+a:hover {
+	color: #B8CC66;
+}
+a:focus {
+	outline: none;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+#wrapper-container {
+	width: 95%;
+	max-width: 1140px;
+	margin: 0 auto 3em auto;
+}
+
+/* -------------------------------- Header */
+header {
+	position: relative;
+	margin-top: 3em;
+}
+
+#logo {
+	display: inline-block;
+	background: none;
+	width: 30%
+}
+
+#logo img {
+	width: 100%;
+	max-width: 288px;
+	min-width: 190px;
+}
+
+/* -------- Main Navigtion */
+nav {
+	position: absolute;
+	right: 0;
+	top: 1.5em
+}
+
+nav ul li {
+	float: right;
+	display: inline-block;
+	margin-left: 1px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 0.5em 0.8em;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+nav ul li a:link {
+	background: #6685CC;
+	color: #fff;
+}
+
+nav ul li a:hover {
+	background: #B8CC66;
+	color: #fff;
+}
+
+/* ----------- Login Section */
+
+#login {
+	padding-top: 0.6em;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	top: -2.4em;
+}
+
+#login-link-text {
+	display: inline-block;
+}
+
+#login a.show-form {
+	float: right;
+	text-align: center;
+	padding: 0.2em 1.8em;
+	display: block;
+	position: relative;
+	border: 1px solid #aaa;
+	-moz-border-radius: 90px;
+	-webkit-border-radius: 90px;
+	border-radius: 90px;
+}
+
+#login a.show-form:link {
+	background: #fff;
+	color: #999;
+}
+
+#login a.show-form:link span {
+	color: #999;
+}
+
+#login a.show-form:hover {
+	background: #555;
+	color: #fff;
+}
+
+#login a.show-form:hover span {
+	color: #fff;
+}
+
+/* ------------------------- Main top section */
+#main-top-section {
+	background:#eee;
+	height: auto;
+	margin-top: 2em;
+	border-bottom: 1px dotted #555;
+}
+
+/* --------------- Media queries -------------- */
+/* set breakpoints for different viewport size */
+
+@media only screen and (max-width: 960px) {
+	.breakpoint-960 .cell {
+		float: none;
+		width: 100%;
+		padding-bottom: 0.5em
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.breakpoint-768 .cell {
+		float: none;
+		width: 100%;
+		padding-bottom: 0.5em;
+	}
+
+	nav ul li a {
+		font-size: 0.9em
+	}
+	#login a.show-form {
+		padding-left: 1.3em;
+		padding-right: 1.3em
+	}
+	#logo {
+		margin-top: 0.5em;
+	}
+
+}
+
+@media only screen and (max-width: 640px) {
+	.breakpoint-640 .cell {
+		float: none;
+		width: 100%;
+		padding-bottom: 0.5em
+	}
+
+	header {
+		margin-top: 1em;
+	}
+	#login {
+		top: 1em;
+	}
+	#logo {
+		padding-bottom: 3em
+	}
+	nav {
+		width: 100%;
+		top: 5.8em
+	}
+	nav ul li {
+		width: 24.5%;
+		margin-left: 0.5%
+	}
+	nav li a {
+		text-align: center;
+		font-size: 0.8em;
+	}
+	#login-link-text {
+		display: none;
+	}
+}
+@media only screen and (max-width: 580px) {
+	header {
+		margin-top: 1em;
+	}
+	
+	#logo {
+		width: 40%;
+		margin-top: 0.6em;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.breakpoint-480 .cell {
+		float: none;
+		width: 100%;
+		padding-bottom: 0.5em
+	}
+	#logo {
+		padding-bottom: 11em
+	}
+	nav ul li {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 0.5%;
+	}
+	
+	
+}
+
+/* Icon Fonts */
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot');
+	src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon.svg#icomoon') format('svg'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-user:before {
+	content: "\21";
+}
+.icon-locked:before {
+	content: "\22";
+}
+.icon-enter:before {
+	content: "\23";
+}
+.icon-facebook:before {
+	content: "\24";
+}
+.icon-gplus:before {
+	content: "\25";
+}
+.icon-feed:before {
+	content: "\26";
+}
+.icon-twitter:before {
+	content: "\27";
+}
+.icon-cancel:before {
+	content: "\28";
+}
+
+/* all next styles are for the illustration of an example */
+
+
+footer {
+	background: #555;
+	margin-top: 1em;
+}
+#footer-content {
+	background: #eee;
+}
+
+#main-top-section {
+	margin-top: 1em;
+}
+#main-bottom-section {
+	background: #7d7d7d;
+	margin-top: 0.5em;
+	color: #fff;
+}
+#top-section-content {
+	background: #ccc;
+}
+#video-container {
+	background: #c4c4c4;
+}
+#map-container {
+	background: #999;
+}
+#charts-container {
+	background: #7d7d7d;
+}
+
+p.temp-project-description {
+	margin-top: 1em
+}

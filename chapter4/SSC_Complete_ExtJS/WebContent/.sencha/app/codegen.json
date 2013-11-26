@@ -1,0 +1,99 @@
+{
+  "sources": {
+    "theme.html.tpl.merge": {
+      "e6050d3bd63ff241bbbd49585da9dbc8d3830789": "eJydVMFu2zAMvecrWJ+2g+y03WFI7VyyDtswYMWSHXZUZCZSI0uexDgJiv77JNtN3S7AigiGAYt875HPovKLTz9mi993tyCp0tNRfsHYCABmtj44tZYE78R7uBpfXrHwuk5hjkZIDl+NSEeMBUCPk8jLaURCToo0Tm/3BN/msJBYIXzhzqD3edbFurwKiQdZqhn+2aqmSGbWEBpii0ONCYjuq0gI95RFmRsI0s4jFb8Wn9nHZDrqiPqa4bvlJXCtwUVChyVoZTYeuCnBC6dq8m1erLsFxnBI1kXi6aDRS0RKgIJ8ryq8T0A6XBUJ7nlVa0zbrawn6FiHiHve8G43Ae9EkaRpFp6HleMV7qzb3HGSj1lIZSU26b1PpnnWAd7OubSWPDlev8KfsIMkwlwrgS4Y6vC0D2+QdGhKdP/Xi/ZX3KgVeuqdl9aR2J6h2VtXc7Hha/Q/UT+bR/FcsSX3mHnufdb/nuxJ+0xnz5E8Nnimpth6stVJa9tj2THFlcYy1mjQcbIOHo6BuHaqJDmB6/F4XO9vjqHH0TM8pKyRWJwsrgLLK4aKu7UyE7h8QTDg/jD+J1Jbr0jZgApzxEk1+DJuG3QrbXcTaJRXS43Dytoes77JPBvcIUtbHkDoYHOcvEHT0aMYbPPbq+cvqst4Bw\u003d\u003d"
+    },
+    "build.properties.merge": {
+      "f6a3611f74fef55d98718ebcbfd2a7e70958738f": "eJytVk2P4zYMvftXEDs9tMDYc1/Ah6LooYftFu1cCsxFsRlHs7Zk6GOStMh/LylZtpw4g267ucQWySeKj3zyA9Tf8lc8wPNBWtjLHqHFvVRoYTR6ROMkPXqLLezOsPOyb0s5jH11GvpHOB5kcwAKdAeERhsEvScsfhPj2MtGOKmVjXEM2KC1FfypPTRCQeOt04P8Cyki7e40ASlndM8wBPYmjNTegh4jVshFqrBJwK2KB3L75dNvn39//vHXZyjhD1TNQcBPQwtH2fcwoOkQztoboHXV0YmO0lHijmCPClpvpOrAj50RLdqKy6FBvGlJSWuHykmRUCi5PR2MIqN9EF84thdkfAR7RBz5Pe3jdKjHdDpG/rbEFV+HmNXz1cITnWYYKS+Tkf2VgAUd3Fao3qTRaqBS1QTV+obJKiI/rTT1d39TQ1Tz++WJFq4CL8Xkz0kZahRCqBawujx7ueHh0DqqeCzF8wEt5p3LbbZDGHQr95Iah9srUAMdKjREa+zNqbsIwnpqaWEBT03vW+aSmSP+jB5C01l0FfBOsNdmEI48R+SGUHjseXIIhCyAgoFM5/lwj3HpJGh28CN5ZL/wFg/GeceZyU/+MvvHpPBFwbJWKjGgHUWD9c8n95Kqvg11a1zql0w3QWWLO9+91HvRW7xym8PjMrFCY0ZjPrGeMT6b/i1RzisMFee9SCZCwklFsjRYQdblSpVN1lCvvORlFLnS4NFIh1nRJrilKpM0Tqme3+koTlWq0TsQijrKO34cBVmCshFSrl3T6PH/QP4VfI/dRzK2eKqEHU+P0/OrHaGqKvih4AliuIoJr6P14Ia+mCQ37j1vuPjz2zSBafZyqMsUzxnrFUIsSo6xnuA1SgZDKK82x2h6YS11RUhd9H2ZFl7tlcfWRrcYi1hYblVMd0vWBs543HZK5N710IY7YWtwtv2uZ4i9kka9k9LskuLjgP1nSbdUHxZ1a/+PnhOpRGG1EzY1TSh4SaytjFVQhcklLV4WAEt5bHXMOv4S/OYg43fndRBfuLKrzG5B5toZ7OtZUe4g58DvJDPBXVb4iRts76jY1Z5xt4LDiIWKqbiRwNnabBgzfZzd4tGz8U0lyqCijCQ9rsvSGboKoCx3OnzVlCXdPA3G6k0XUHYlh60526fJtvK7aYItp3t05CALGVnUFiFXoJdVzL2WWu8UGora/vP0xUgKzaUKVwrp0wcbPw/3NDD0JYcfZgmeRjOszgUt/gGleuw3"
+    },
+    "app.js.tpl.merge": {
+      "ca9cfeb9d3913435880b586ce4603fc886054b52": "eJzdVk1v4jAQvedXjJBQQsuGPdOyW6nlUGm3XanVSivEwU0GsOrYWX8AFcp/37HNR7qFQ6We6kuwx+955r1JzKbLq1pp+4sVz2yOWaGq3KAsFix3lotetxmcJUDjccENzLhAoOccJWpmsQQmS3B1GX4/vcBDgMJ1VebwRzkomAQsuQW7hzMT+CRiSZiZ0vCinAZW14IXzHIl+/DkPAINBrCBFRcCFmyJYBU8IVSo5+HAQHU4FFYLlEDH1aiJuTJQqBJ36RI1WGaeDRhXLCiRfUDOKZ9VIKsIIEyfgNJqJQRqA5TjkuPKhGrDEdpJ6VGdqJXPnmSYa1ZiJ08C0W2JTIgXoLCco/GZH0RYKSdKX4ngFd/pWCljKaKfD+FSSQxsXIIiRTTUghXElu1KuD7k2cvhdtZWg9SXyka1gsqBapeQP9KLezDTi9X38gW9a61KV5Bh0IkMJMmMPLIdKoRZTxj4wmZvpy9Ro1GCfKqYdL78PDkbJMlgADf3cHf/CDfjH+PHMXyJWpRcY2H5MjSVxr+O5rEnWlXUsTWDgl6dnOiutpvhahu9X6LWvESTJOO1zVvdlG1iv7EKh5BuKHJHP5u0n1zaWgCfjTq09jPY3vnW6oHhZNMNUz+WTDg0eYzACLKZk0XoqCyu9WCz3+yHLyJbMk1lWdo/mfapEG09NgJyQynaLO2nPdKclr9e0OMy7soFyrldXMD5Of+fObTDLAv7Jnx6LOwHnZvXziyyjS8dhrADNL2LN4AmOT0jIqelfxxwTS/bKrLXDs4hTbfU3SZoSxqMOlVbWT/SkFCTbiaQrbkscQ2jEawL5aTtwXdioWRJFpg2lwOiicgp+RVmbdd++7dySx3e0CEcMS2+u688C0vvsCzs/zyOBd1OGbZsifrBfj1YRR+ILbcJk6OOxdBry+LaOzyLgM9jWhTvlGumLe0H29a6Y7YHtG7Howa2b89XLrYC77Cyhfo8frZUPWVq8Ub4D3A2zJiz6lojXfv+W+D/AQ7BaoeJL/Mfnl7s3A\u003d\u003d"
+    },
+    "app.json.tpl.merge": {
+      "e5f71b1bb6813850ab3a32f5d235c01c12678423": "eJyr5lIAAqW8xNxUJSsFpWoQo1aJqxYAS3MGqQ\u003d\u003d"
+    }
+  },
+  "targets": {
+    "sass/example/theme.html": {
+      "source": "theme.html.tpl.merge",
+      "version": "e6050d3bd63ff241bbbd49585da9dbc8d3830789",
+      "parameters": {
+        "frameworkName": "ext",
+        "frameworkPath": "ext",
+        "senchadir": ".sencha",
+        "controllerFileName": "Main",
+        "appModels": "",
+        "viewFileName": "Main",
+        "appControllers": "",
+        "appViews": "",
+        "uniqueId": "edace696-a87d-42f2-bf3d-2645d3014f80",
+        "appName": "SSC",
+        "controllerName": "Main",
+        "viewName": "Main",
+        "themeName": "default",
+        "packagesRelPath": "packages",
+        "name": "SSC",
+        "library": "all",
+        "appStores": ""
+      }
+    },
+    "app/app.js": {
+      "source": "app.js.tpl.merge",
+      "version": "ca9cfeb9d3913435880b586ce4603fc886054b52",
+      "parameters": {
+        "appName": "SSC",
+        "frameworkPath": "ext",
+        "appModels": "",
+        "appControllers": "Donate",
+        "appStores": "Campaigns,Donors",
+        "appViews": "CampaignsMap,DonateForm,DonorsPanel,Header,LoginBox,VideoPanel,Viewport"
+      }
+    },
+    ".sencha/app/build.properties": {
+      "source": "build.properties.merge",
+      "version": "f6a3611f74fef55d98718ebcbfd2a7e70958738f",
+      "parameters": {
+        "frameworkName": "ext",
+        "frameworkPath": "ext",
+        "senchadir": ".sencha",
+        "controllerFileName": "Main",
+        "appModels": "",
+        "viewFileName": "Main",
+        "appControllers": "",
+        "appViews": "",
+        "uniqueId": "edace696-a87d-42f2-bf3d-2645d3014f80",
+        "appName": "SSC",
+        "controllerName": "Main",
+        "viewName": "Main",
+        "themeName": "default",
+        "packagesRelPath": "packages",
+        "name": "SSC",
+        "library": "all",
+        "appStores": ""
+      }
+    },
+    "app.json": {
+      "source": "app.json.tpl.merge",
+      "version": "e5f71b1bb6813850ab3a32f5d235c01c12678423",
+      "parameters": {
+        "frameworkName": "ext",
+        "frameworkPath": "ext",
+        "senchadir": ".sencha",
+        "controllerFileName": "Main",
+        "appModels": "",
+        "viewFileName": "Main",
+        "appControllers": "",
+        "appViews": "",
+        "uniqueId": "edace696-a87d-42f2-bf3d-2645d3014f80",
+        "appName": "SSC",
+        "controllerName": "Main",
+        "viewName": "Main",
+        "themeName": "default",
+        "packagesRelPath": "packages",
+        "name": "SSC",
+        "library": "all",
+        "appStores": ""
+      }
+    }
+  }
+}
