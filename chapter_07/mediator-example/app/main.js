@@ -10,7 +10,3 @@ define(['mediator', 'pricePanel', 'orderPanel'], function(Mediator, PricePanel, 
     Mediator.registerComponent("orderPanel", new OrderPanel());
   })();
 });
-
-/*
-//@ sourceMappingURL=main.map
-*/

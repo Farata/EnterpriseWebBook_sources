@@ -1,4 +1,4 @@
-define ['mediator'], ()->
+define [], ()->
   class PricePanel
     mediator = {}
     onBidClick: (currentPrice)=>
