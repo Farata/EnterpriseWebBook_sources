@@ -1,4 +1,5 @@
-Ext.define('Test.spec.BasicAssumptions', {}, function () {
+Ext.define("Test.spec.BasicAssumptions", {}, function () {
+    "use strict";
     describe("Basic Assumptions: ", function () {
             it("Ext namespace should be available loaded", function () {
                 expect(Ext).toBeDefined();
@@ -14,7 +15,7 @@ Ext.define('Test.spec.BasicAssumptions', {}, function () {
                 expect(SSC).toBeDefined();
             });
             it("Donate controller should be loaded", function () {
-                var controller = Application.getController('Donate');
+                var controller = Application.getController("Donate");
                 expect(controller).not.toBeUndefined();
             });
         }

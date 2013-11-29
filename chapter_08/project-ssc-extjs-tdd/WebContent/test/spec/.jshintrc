@@ -39,6 +39,8 @@
     "afterEach",
     "runs",
     "waitsFor",
-    "Ext"
+    "Ext",
+    "SSC",
+    "Application"
   ]
 }
