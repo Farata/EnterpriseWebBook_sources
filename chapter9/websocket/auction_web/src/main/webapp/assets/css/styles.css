@@ -1,0 +1,671 @@
+* {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+ul li, ol li {
+	list-style: none;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+/* Links */
+body {
+	font: .81em/150% "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	color: #444;
+}
+a {
+	color: #6685CC;
+	text-decoration: none;
+}
+a:visited {
+	color: #551a8b;
+}
+a:hover {
+	color: #B8CC66;
+}
+a:focus {
+	outline: none;
+}
+/* Main content
+ #main-container is wrapper for all page content
+ */
+#main-container {
+	background: url(../img/bg-1.png) no-repeat;
+	width: 980px;
+	margin: 0 auto;
+}
+
+header {
+	height: 80px;
+}
+/* Logo and h1 heading */
+header h1#logo {
+	background: url(../img/logo.png) no-repeat;
+	width: 300px;
+	height: 80px;
+	float: left;
+	margin-top: 30px;
+	text-indent: -9999px;
+}
+
+/* ------------------------- login section */
+
+.login-form-icons {
+	font-size: 1.4em;
+	color: #63747e;
+	vertical-align: middle;
+}
+
+/* intup fields placeholders */
+::-webkit-input-placeholder {
+	color: #ccc;
+}
+:-moz-placeholder {
+	color: #ccc;
+}
+:-ms-input-placeholder {
+	color: #ccc;
+}
+
+li#login input:focus::-webkit-input-placeholder {
+	/*color: transparent;*/
+	color: #ebebeb;
+	outline: none;
+}
+li#login input:focus:-moz-placeholder {
+	/*color: transparent;*/
+	color: #ebebeb;
+	outline: none;
+}
+
+li#login input {
+	width: 122px;
+	padding: 4px;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+li#login, li#top-menu-items {
+	clear: both;
+}
+li#login {
+	text-align: right;
+	height: 40px;
+	padding-top: 10px;
+	margin-bottom: 12px;
+}
+li#login form {
+	float: left;
+	display: none;
+	margin-top: 2px;
+}
+
+/* show login form link*/
+li#login a.show-form {
+	font-size: 0.9em;
+	float: right;
+	width: 100px;
+	text-align: center;
+	padding: 3px 12px 2px 12px;
+	margin-right: 2px;
+	display: block;
+	position: relative;
+	border: 1px solid #aaa;
+	border-radius: 90px;
+	-moz-border-radius: 90px;
+	-webkit-border-radius: 90px;
+}
+li#login a.show-form:link {
+	background: #fff;
+	color: #999;
+}
+li#login a.show-form:link span {
+	color: #999;
+}
+li#login a.show-form:hover {
+	color: #333;
+}
+li#login a.show-form:hover span {
+	color: #333;
+}
+
+/* login form submit link */
+a#login-submit {
+	display: none;
+	width: 100px;
+	float: left;
+	padding: 3px 12px;
+	margin-left: 20px;
+	text-align: center;
+	border-radius: 90px;
+	-moz-border-radius: 90px;
+	-webkit-border-radius: 90px;
+}
+a#login-submit:link {
+	background: #555;
+}
+a#login-submit:hover {
+	background: #B8CC66
+}
+
+#authorized {
+	display: none;
+	width: 140px;
+	height: 40px;
+	float: right;
+	text-align: left;
+	line-height: 17px;
+	position: relative;
+	top: -7px;
+}
+#user-authorized {
+	font-weight: bold;
+	color: #666;
+	font-size: 1em;
+}
+.authorized-icon {
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	color: #999;
+	display: block;
+	float: left;
+	position: relative;
+	top: 9px;
+}
+#authorized a {
+	display: inline;
+	background: none;
+	font-size: 0.9em;
+	padding: 0;
+}
+#authorized a:link {
+	color: #119bf6;
+}
+#authorized a:hover {
+	color: #555;
+}
+/* ------------------------------ Navigation menu */
+nav {
+	float: right;
+}
+li#top-menu-items ul li {
+	float: left;
+	margin-left: 1px;
+}
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 7px 12px;
+	border-radius: 4px;
+}
+nav ul li a.default:link {
+	background: #6685CC;
+	color: #fff;
+}
+nav ul li a.default:hover {
+	background: #B8CC66;
+	color: #fff;
+}
+/* ------------------------- Main content */
+div#main {
+	clear: both;
+	min-height: 480px;
+}
+/* ------------------------- Main top section */
+#main-top-section {
+	background: url(../img/child-1.jpg) no-repeat right bottom, url(../img/bg-2.png) no-repeat 20% bottom;
+	width: 100%;
+	height: 320px;
+	margin-top: 18px;
+	border-bottom: 1px dotted #555;
+}
+.donate-button, .donate-button-2 {
+	background: #ffa600;
+	background: -webkit-gradient(linear, left top, left bottom, from(#feca69), to(#ffa600));
+	background: -webkit-linear-gradient(top, #feca69, #ffa600);
+	background: -moz-linear-gradient(top, #feca69, #ffa600);
+	background: -ms-linear-gradient(top, #feca69, #ffa600);
+	background: -o-linear-gradient(top, #feca69, #ffa600);
+	width: 180px;
+	display: block;
+	margin-left: 160px;
+	padding: 14px 27px;
+	border: 0;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.donate-button:hover, .donate-button-2:hover {
+	background: #B8CC66;
+	color: #ffffff;
+}
+.donate-button:active, .donate-button-2:active {
+	background: #1b435e;
+}
+.donate-button-submit {
+	margin: 0;
+}
+.donate-botton-header {
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+}
+.donate-2nd-line {
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+}
+p.donation-address {
+	padding: 4em 46% 2.5em 2em;
+}
+
+/* Donation form  */
+.donation-form-section {
+	width: 220px;
+	float: left;
+}
+#donate-form-container {
+	display: none;
+	padding-top: 20px;
+}
+/* some basic styles for form elements; more advanced styling - see step 2 */
+#donate-form-container select, input[type=text], input[type=email] {
+	width: 150px;
+	margin-bottom: 5px;
+	color: #999;
+}
+
+input[type=text], input[type=email] {
+	border: 1px solid #999;
+	padding: 3px
+}
+
+#donate-form-container h3 {
+	font-size: 1.4em;
+	font-weight: normal;
+	/*color:#B8CC66;*/
+}
+
+#donate-later-link {
+	width: 180px;
+	height: auto;
+	margin-top: 10px;
+	text-align: center;
+	display: block;
+}
+.make-payment h4 {
+	padding: 12px 0 8px 0;
+	color: #666;
+}
+.make-payment p {
+	background: #fff;
+	font-size: 0.9em;
+	margin-bottom: 1.2em;
+}
+label.donation-heading {
+	display: block;
+	padding: 12px 0 8px 0;
+	color: #666;
+	font-weight: bold;
+	font-size: 0.9em;
+	line-height: 130%;
+}
+/* Main botttom section */
+#main-bottom-section {
+	width: 100%;
+	height: 348px;
+	padding-top: 20px;
+	position: relative;
+}
+#video-container {
+	width: 390px;
+	height: 330px;
+	float: right;
+	text-align: center;
+}
+#map-container {
+	width: 300px;
+	height: 330px;
+	position: relative;
+	float: right;
+	margin-right: 10px
+}
+#location-map {
+	background: #eee;
+	width: 300px;
+	height: 240px;
+	border: 4px solid #ccc;
+}
+#location-ui {
+	width: 300px;
+	position: absolute;
+	top: 240px;
+	left: 0;
+	padding-top: 8px;
+	font-size: 0.9em;
+	line-height: 130%;
+	text-align: center;
+}
+#location-ui h3 {
+	margin-bottom: 6px
+}
+#resize-map {
+	visibility: hidden;
+	position: absolute;
+	top: 300px;
+	left: 90px;
+	font-weight: bold;
+}
+.infowindow {
+	font-size: 0.9em;
+	line-height: 130%;
+	overflow: hidden;
+}
+#charts-container {
+	width: 240px;
+	float: left;
+	text-align: center;
+}
+#svg-container {
+	width: 260px;
+	height: 240px;
+	margin-bottom: 8px;
+}
+#svg-container text {
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+.description-container-content {
+	padding: 1em 30% 2em 0;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+	-moz-column-gap: 40px;
+	-webkit-column-gap: 40px;
+	column-gap: 40px;
+}
+.donate-button-2 {
+	margin-left: 0;
+	margin: 0 auto
+}
+a.nav-selected:link, a.nav-selected:hover {
+	cursor: default;
+	background: #999;
+	color: #fff;
+}
+#main-top-section h2 {
+	padding-top: 0.8em;
+	color: #ADBF60;
+}
+#auction-ui {
+	width: 750px;
+}
+
+#auction-controls {
+	width: 440px;
+	float: right;
+	padding-top: 1em;
+	position: relative
+}
+#auction-controls h2 {
+	padding-top:0;
+	float: right
+}
+#auction-heading {
+	position: absolute;
+	right: 50px;
+	bottom: -60px;
+}
+#auction-login {
+	width: 100%;
+	margin-bottom: 1em
+}
+#auction-login a, a#bid_button {
+	display: inline-block;
+	padding: 4px 8px;
+	background: #ADBF60;
+	color: #fff;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+a#bid_button {
+	padding: 12px 10px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+}
+#auction-login a:hover, a#bid_button:hover {
+	background: #555;
+}
+#auction-login input {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-left: 1em;
+}
+#bid_prices {
+	width: 120px;
+	border: 0 none;
+	background: #eee;
+	color: #333;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+#bidInput {
+	width: 120px;
+	color: #333;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+.bid-label, #output  {
+	font-weight: bold;
+}
+#output  {
+	width:220px;
+	color:#BF5A2F;
+}
+
+#remaining-time-holder {
+	width: 230px;
+	position: absolute;
+	right: 0;
+	top: 58px
+}
+#auction-item {
+	width: 300px;
+	float: left;
+	padding-top: 1em;
+	position: relative;
+}
+#auction-image-holder {
+	width: auto;
+	height: 190px;
+	position: relative;
+	margin-top: 1em
+}
+#auction-image-caption {
+	background: #fff;
+	width: 90%;
+	padding: 0.5em;
+	font-weight: bold;
+	color: #000;
+	position: absolute;
+	bottom: -40px;
+	left: 1em;
+}
+#auction-image-holder img {
+	max-width: 100%;
+	max-height: 100%;
+}
+select#comboID {
+	margin-left: 1.5em
+}
+
+#remainingTimeID {
+	font-size: 2.5em;
+	border: 0 none;
+	background: none;
+	text-align: center
+}
+
+/* auction image's dropshadow effect --> */
+.drop-shadow {
+	position: relative;
+	float: left;
+	/*width: 40%;*/
+	padding: 1em;
+	/*margin: 2em 10px 4em; */
+	background: #fff;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.drop-shadow:before, .drop-shadow:after {
+	content: "";
+	position: absolute;
+	z-index: -2;
+}
+
+.lifted {
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.lifted:before, .lifted:after {
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	height: 20%;
+	max-width: 300px;
+	max-height: 100px;
+	-webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+.lifted:after {
+	right: 10px;
+	left: auto;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+/* Rotated box */
+
+.rotated {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+.rotated > :first-child:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+/*  <-- auction image's dropshadow effect */
+
+/* Footer */
+footer {
+	border-top: 1px dotted #555;
+	text-align: right;
+	padding-top: 20px;
+}
+footer #temp-project-name-container {
+	float: left;
+}
+footer #social-icons {
+	float: right;
+}
+footer #social-icons a {
+	font-size: 28px;
+}
+
+/* Icon Fonts */
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot');
+	src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon.svg#icomoon') format('svg'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-user:before {
+	content: "\21";
+}
+.icon-locked:before {
+	content: "\22";
+}
+.icon-enter:before {
+	content: "\23";
+}
+.icon-facebook:before {
+	content: "\24";
+}
+.icon-gplus:before {
+	content: "\25";
+}
+.icon-feed:before {
+	content: "\26";
+}
+.icon-twitter:before {
+	content: "\27";
+}
+.icon-cancel:before {
+	content: "\28";
+}
+.icon-mail:before {
+	content: "\29";
+}

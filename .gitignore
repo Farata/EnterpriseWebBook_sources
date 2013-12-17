@@ -85,3 +85,7 @@ local.properties
 
 # PDT-specific
 .buildpath
+chapter9/websocket/auction_web/src/main/webapp/bower_components
+chapter6/mediator-example/bower_components
+chapter6/project-15-dynamic-content-modules/bower_components
+rebel.xml

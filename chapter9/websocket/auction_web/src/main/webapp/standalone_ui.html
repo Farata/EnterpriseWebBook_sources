@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Save Sick Child Auction</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" media="all">
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico"/>
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"/>
+</head>
+<body>
+
+<div class="page-header">
+    <h1>"Save Sick Child" Auction
+        <small>WebSockets Application</small>
+    </h1>
+</div>
+
+
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="comboID">List of auction items: </label>
+
+        <div class="controls">
+            <select id="comboID" name="auctionList">
+            </select>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <ul class="thumbnails">
+                <li class="span6">
+                    <div class="thumbnail">
+                        <img id="photoId" src="" alt="">
+
+                        <h3 id="itemNameId"></h3>
+
+                        <p id="itemDescription"></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="control-group">
+
+        <div class="control-group">
+            <label class="control-label text-info" for="loginID">Enter your login: </label>
+
+            <div class="controls">
+                <div class="input-prepend input-append">
+                    <input id="loginID" size="20" name="logintext" value="" type="text"
+                           placeholder="e.g. George Soros" class="span3"/>
+                </div>
+                <a href="" class="btn" type="button" id="gotoAuction-button">Go To Auction</a>
+
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="bidInput">Place the bid:</label>
+
+            <div class="controls">
+                <div class="input-prepend input-append">
+                    <span class="add-on">$</span>
+                    <input type="text" size="20" name="bid" id="bidInput" value=""
+                           placeholder="e.g $1000.000" class="span3"/>
+                    <span class="add-on">.00</span>
+                </div>
+                <a class="btn" href="" id="bid_button">Bid!</a>
+            </div>
+        </div>
+        <div class="control-group">
+
+            <label class="control-label" for="bid_prices">Current (Max) bit:</label>
+
+            <div class="controls">
+                <div class="input-prepend input-append">
+                    <span class="add-on">$</span>
+                    <input class="span3" type="text" id="bid_prices" readonly="readonly"/>
+                    <span class="add-on">.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="remainingTimeID">Auction remaining time</label>
+
+        <div class="controls">
+            <div class="input-prepend input-append">
+                <span class="add-on"><i class="icon-time"></i></span>
+                <input type="text" id="remainingTimeID" readonly="readonly" class="span3"/>
+
+            </div>
+        </div>
+    </div>
+    <div class="span4 well" id="output"></div>
+</form>
+
+<div class="navbar navbar-fixed-bottom">
+    &copy Enterprise Web Development: From Desktop To Mobile
+</div>
+
+<script src="bower_components/requirejs/require.js" data-main="app/standalone_app"></script>
+
+</body>
+</html>

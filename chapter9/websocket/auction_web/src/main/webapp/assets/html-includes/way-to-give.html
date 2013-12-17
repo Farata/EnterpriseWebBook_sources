@@ -1,0 +1,60 @@
+<div id="auction-ui">
+    <form>
+        <div id="auction-item">
+
+            <label for="comboID">Select Auction Item: </label>
+            <select id="comboID" name="auctionList">
+            </select>
+
+            <div id="auction-image-holder" class="drop-shadow lifted">
+                <!-- <img id="photoId" src="assets/img/paint.jpg" alt=""> -->
+                <img id="photoId" src="assets/img/dummy.png" alt="">
+            </div>
+            <div id="auction-image-caption">
+                <span id="itemNameId">Item name</span> | <span id="itemDescription">Item description</span>
+            </div>
+
+        </div>
+        <!-- div auction-item end-->
+
+        <div id="auction-controls">
+
+            <div id="auction-login">
+                <input id="loginID" name="logintext" value="" type="text" placeholder="Choose nickname"/>
+                <a href="javascript:void();" id="gotoAuction-button">Go To Auction</a>
+            </div>
+
+            <label class="bid-label" for="bid_prices">Current (Max) bid:</label>
+
+            <div class="input-prepend input-append">
+                <span class="add-on">$</span>
+                <input type="text" id="bid_prices" readonly="readonly"/>
+                <span class="add-on">.00</span>
+            </div>
+
+            <label class="bid-label" for="bidInput">Place the bid:</label>
+
+            <div class="input-prepend input-append">
+                <span class="add-on">$</span>
+                <input type="text" name="bid" id="bidInput" value="" placeholder="e.g $1000.000"/>
+                <span class="add-on">.00</span> <a href="javascript:void();" id="bid_button">Bid!</a>
+            </div>
+
+            <div id="remaining-time-holder">
+                <label class="control-label" for="remainingTimeID">Auction remaining time:</label>
+
+                <div>
+                    <input type="text" id="remainingTimeID" readonly="readonly"/>
+                </div>
+            </div>
+
+            <div id="output"></div>
+
+            <div id="auction-heading" class="drop-shadow lifted rotated">
+                <h2>Charity Auction</h2>
+            </div>
+
+        </div>
+
+    </form>
+</div>
