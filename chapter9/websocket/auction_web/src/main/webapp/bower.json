@@ -1,0 +1,10 @@
+{
+  "name": "ch8_websocket_auction",
+  "description": "Chapter 8: Save The Child, Auction App",
+  "dependencies": {
+    "requirejs": "~2.1.5",
+    "modernizr": "~2.6.2",
+    "requirejs-google-maps": "latest"
+  },
+  "devDependencies": {}
+}

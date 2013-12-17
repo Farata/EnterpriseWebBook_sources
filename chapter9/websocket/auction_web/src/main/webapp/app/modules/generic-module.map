@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "generic-module.js",
+  "sourceRoot": "",
+  "sources": [
+    "generic-module.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA,CAAO,CAAsB,CAAA,GAA7B,GAA8B,IAAD,KAAtB;CACL,KAAA,OAAA;CAAA,CAAA,CAAgB,KAAA,CAAC,IAAjB;WACE;CAAA,CAAQ,CAAA,GAAR,CAAQ,EAAC,EAAD;CACN,CAAoC,IAApC,CAAA,CAAA,GAAA,EAAa;CACL,EAAR,IAAO,CAAM,CAAA,MAAb,EAAA;CAFF,MAAQ;CADM;CAAhB,EAAgB;CADW,QAM3B;CAN2B"
+}
