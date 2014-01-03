@@ -1,0 +1,126 @@
+/* most basic and common reset of browser specific*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+article, aside, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* The main container width should to be 90% of viewport width but not wider than 1140px */
+#main-container {
+	width: 90%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+/* Background color of all elements was set just as an example */
+header {
+	background: #ccc;
+	width: 100%;
+	height: 80px;
+}
+
+#main-top-section {
+	background: #bbb;
+	width: 100%;
+	height: 300px;
+	position: relative;
+}
+
+#main-bottom-section {
+	width: 100%;
+}
+
+#video-container, #map-container, #charts-container {
+	width: 33.333%;
+	/* Just for example let's make these three container of square shape. */
+	/* We can get this by setting padding-bottom equal to width */
+	padding-bottom: 33.333%;
+	float: left;
+	position: relative;
+}
+
+#video, #map, #charts {
+	background: #aaa;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	padding: 0.5em;
+}
+
+#map {
+	background: #999;
+}
+
+#charts {
+	background: #7d7d7d;
+}
+
+footer {
+	background: #555;
+	width: 100%;
+	height: 80px;
+	color: #fff;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 768px) {
+	#main-container {
+		width: 98%
+	}
+
+	#main {
+		background: #bbb;
+	}
+
+	#main-top-section, #main-bottom-section {
+		width: 50%;
+		float: left;
+	}
+
+	#main-top-section {
+		height: 100%;
+	}
+
+	#video-container, #map-container, #charts-container {
+		float: none;
+		width: 100%;
+		padding-bottom: 70%;
+	}
+
+}
+
+@media only screen and (max-width: 640px) {
+
+	#main-top-section, #main-bottom-section {
+		width: 100%;
+		float: none;
+	}
+
+	#main-top-section {
+		height: 400px;
+	}
+
+	#video, #map, #charts {
+		height: 60%;
+	}
+}

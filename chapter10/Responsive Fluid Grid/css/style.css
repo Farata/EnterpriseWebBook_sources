@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ul li {
+	list-style: none;
+}
+
+.row:before, .row:after, .clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.row:after, .clearfix:after {
+	clear: both;
+}
+
+/* Start of fluid grid styles */
+
+.row {
+	padding: 0 0 0 0.5em;
+	background: #eee;
+}
+
+.breakpoint-480 .cell, .breakpoint-640 .cell, .breakpoint-768 .cell, .breakpoint-960 .cell, .no-breakpoint .cell {
+	float: left;
+	padding: 0 0.5em 0 0;
+}
+
+.one-column {
+	width: 8.333%;
+}
+
+.two-column {
+	width: 16.666%;
+}
+
+.three-column {
+	width: 24.999%;
+}
+
+.four-column {
+	width: 33.332%;
+}
+
+.five-column {
+	width: 41.665%;
+}
+
+.six-column {
+	width: 49.998%;
+}
+
+.seven-column {
+	width: 58.331%;
+}
+
+.eight-column {
+	width: 66.664%;
+}
+
+.nine-column {
+	width: 74.997%;
+}
+
+.ten-column {
+	width: 83.33%;
+}
+
+.eleven-column {
+	width: 91.663%;
+}
+
+.twelve-column {
+	width: 100%;
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.row.nested {
+	padding: 0;
+	margin-right: -0.5em;
+}
+
+/* --------------- Media queries -------------- */
+
+@media only screen and (max-width: 960px) {
+	.breakpoint-960 .cell {
+		float: none;
+		width: 100%;
+		padding-bottom: 0.5em
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.breakpoint-768 .cell {
+		float: none;
+		width: 100%;
+		padding-bottom: 0.5em
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.breakpoint-640 .cell {
+		float: none;
+		width: 100%;
+		padding-bottom: 0.5em
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.breakpoint-480 .cell {
+		float: none;
+		width: 100%;
+		padding-bottom: 0.5em
+	}
+}
+
+/*End of fluid grid styles*/
+
+#wrapper-container {
+	width: 95%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+/* all next styles are for the illustration of an example */
+
+/* --- .cell visualisation --- */
+.cell {
+	min-height: 50px;
+	text-align:center;
+	border-left: 1px solid #aaa;
+	vertical-align: middle;
+	line-height: 50px;
+}
+.cell .cell:first-child{ 
+	border-left:none;
+}
+/* --- .cell visualisation end --- */
+
+h1.temp-heading, h2.temp-heading, h4.temp-heading {
+	font-size: 1.4em;
+	margin: 1em 0;
+	text-align: center
+}
+h4.temp-heading {
+	font-size: 1.1em;
+}
+
+
+p.temp-project-description {
+	margin: 2em 0;
+}

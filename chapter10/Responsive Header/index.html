@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Build Responsive Layout | Responsive header</title>
+		<meta name="description" content="Build Responsive Layout. Step 1. Responsive header">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+
+	<body>
+
+		<div id="wrapper-container">
+			<header class="clearfix">
+
+				<h1 id="logo"><img src="assets/img/logo.png" /></h1>
+
+				<nav>
+					<ul>
+						<li>
+							<a href="javascript:void(0)">Who We Are</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">What We Do</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Where We Work</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Way To Give</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div id="login" class="login-box">
+					<div id="authorized">
+						<span class="icon-user authorized-icon"></span>
+						<span id="user-authorized">admin</span>
+						<br/>
+						<a id="profile-link" href="javascript:void(0);">profile</a> | <a id="logout-link" href="javascript:void(0);">logout</a>
+					</div>
+					<div id="login-form">
+						<form>
+							<span class="icon-user login-form-icons"></span>
+							<input id="username" name="username" type="text" placeholder="username" autocomplete="off" />
+							&nbsp; <span class="icon-locked login-form-icons"></span>
+							<input id="password" name="password" type="password" placeholder="password"/>
+						</form>
+					</div>
+					<a id="login-submit" href="javascript:void(0)"><span id="login-link-text">login</span> <span class="icon-enter"></span> </a>
+					<a id="login-link" class="show-form" href="javascript:void(0)">login <span class="icon-enter"></span> </a>
+				</div>
+
+			</header>
+
+			<div id="main-content" role="main">
+				<section id="main-top-section" class="row no-breakpoint">
+					<div id="top-section-content" class="eight-column cell">
+						Top section's module
+					</div>
+				</section>
+				<section id="main-bottom-section" class="row breakpoint-640">
+					<div id="charts-container" class="four-column cell">
+						<div id="charts">
+							Charts module
+						</div>
+					</div>
+					<div id="map-container" class="four-column cell">
+						<div id="map">
+							Map  module
+						</div>
+					</div>
+					<div id="video-container" class="four-column cell">
+						<div id="video">
+							Video  module
+						</div>
+					</div>
+				</section>
+			</div>
+			<!--! end of #main-content -->
+			<footer class="row no-breakpoint">
+				<div id="footer-content" class="four-column right">
+					footer's content
+				</div>
+			</footer>
+			<!-- Temp project description-->
+			<p class="temp-project-description">
+				Build Responsive Layout | Step 1. <b>Responsive header</b>
+			</p>
+			<!-- end of Temp project description-->
+		</div>
+		<!--! end of #wrapper-container -->
+		<script src="js/main.js"></script>
+	</body>
+</html>
