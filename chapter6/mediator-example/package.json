@@ -1,0 +1,33 @@
+{
+    "name": "mediator-require",
+    "description": "An example of Mediator Design Pattern",
+    "version": "0.0.0",
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "scripts": {
+        "test": "grunt qunit"
+    },
+    "author": {
+        "name": "Farata Systems",
+        "email": "info@faratasystems.com",
+        "url": "http://enterprisewebbook.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/danheberden/gith/blob/master/LICENSE-MIT"
+        }
+    ],
+    "devDependencies": {
+        "grunt-contrib-jshint": "~0.1.1",
+        "grunt-contrib-qunit": "~0.2.1",
+        "grunt-contrib-concat": "~0.1.2",
+        "grunt-contrib-uglify": "~0.1.1",
+        "grunt-contrib-watch": "~0.2.0",
+        "grunt-contrib-clean": "~0.4.0",
+        "grunt": "~0.4.1",
+        "grunt-contrib-requirejs": "~0.4.0",
+        "grunt-contrib-connect": "~0.3.0"
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "SimpleSpec.js",
+  "sourceRoot": "",
+  "sources": [
+    "SimpleSpec.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA,CAAS,CAAW,CAAA,KAApB,CAAA;CACE,CAAA,CAAwC,MAAA,0BAAxC;CACE,GAAA,EAAA;CADF,EAAwC;CADtB"
+}

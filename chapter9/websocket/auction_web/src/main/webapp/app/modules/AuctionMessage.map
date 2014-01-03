@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "AuctionMessage.js",
+  "sourceRoot": "",
+  "sources": [
+    "AuctionMessage.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA,IAAA,UAAA;;AAAA,CAAA,CAAiB,CAAV,GAAP,CAAO,EAAC;CACC,EAAU,GAAX,CAAN,EAAA;CADK;;AAGD,CAHN;CAIe,CAAA,CAAA,CAAA,KAAA,eAAE;CAA0B,EAA1B,CAAD;CAA2B,EAAnB,CAAD;CAAoB,EAAZ,CAAD,KAAa;CAAzC,EAAa;;CAAb,EAEQ,GAAR,GAAQ;CACD,GAAD,KAAJ,EAAA;CAHF,EAEQ;;CAFR;;CAJF;;AASA,CATA,EASA,IAAO,0BAAP"
+}
