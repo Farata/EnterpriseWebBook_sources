@@ -1,0 +1,60 @@
+--- Check tools
+
+$ node -v
+> v0.10.13
+
+$ npm -v
+> 1.3.4
+
+$ phonegap -v
+> 3.3.0-0.18.0
+
+Check if the full Xcode package is already installed:
+$ xcode-select -p
+If you see:
+> /Applications/Xcode.app/Contents/Developer
+ the full Xcode package is already installed
+
+Setup PATH environment variable (on Mac OS via the .bash_profile file)
+Add the line
+export PATH=${PATH}:/Documents/MobileDev/EclipseADT/sdk/platform-tools:/Documents/MobileDev/EclipseADT/sdk/tools
+into the .bash_profile file
+
+Also make sure latest Android SDK installed: Window -> Android SDK Manager
+Make sure at list one AVD (Android Virtual Device) is installed: Window -> Android Virtual Device Manager
+Install it via Android Virtual Device Manager or install it via CLI
+$ android create avd -n my-android-17 -t android-17 --abi armeabi-v7a
+instrations – http://developer.android.com/tools/devices/managing-avds-cmdline.html
+
+Check AVDs installed here:
+Deafault AVD location ~/.android/avd
+
+--- Create the App
+
+$ phonegap create ~/Documents/MobileDev/projects/SSC org.savesickchild.phonegap.ssc SSC
+> phonegap] created project at /Users/user/Documents/MobileDev/projects/SSC
+
+$ cd ~/Documents/MobileDev/projects/SSC
+Now we are working in the project folder.
+
+Manualy replace, reorder, remove default folders and files by 
+my project folders and files
+
+--- Add platforms
+The build command compiles an application for whichever 
+platform you specify
+
+$ sudo phonegap build ios
+$ sudo phonegap build android
+
+--- Install plugins which are necessary for our project Splashscreen, Camera, Inappbrowser, File, file-transfer
+$ sudo phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-splashscreen.git
+$ sudo phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-camera.git
+$ sudo phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git
+$ sudo phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-file.git
+$ sudo phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-file-transfer.git
+
+--- Test app
+$ sudo phonegap run ios
+$ sudo phonegap run android
+

@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li {
+	width:33.33%;
+	list-style: none;
+	float: left;
+	padding:2px 0 0 2px;
+}
+
+
+li img , #wrapper, #wrapper img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+	
+}
+@media only screen and (max-width: 640px) {
+	li {
+		width:50%;
+	}	
+}

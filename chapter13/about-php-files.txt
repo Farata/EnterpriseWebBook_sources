@@ -1,0 +1,9 @@
+upload.php is script that 1) upload image into special directory 
+on the server, 2) create two copies of the original image: a) thumbnail and b) optimized.
+
+Read comments in upload.php for details.
+
+uploaded-images.php show gallery of thumbnails of uploaded images
+style.css is used in upploaded-images.php to create html grid.
+
+show-img.php show optimized, resized image in app.
