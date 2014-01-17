@@ -6,9 +6,8 @@ import com.ning.http.client.AsyncHttpClient
 import com.ning.http.client.websocket.WebSocket
 import com.ning.http.client.websocket.WebSocketTextListener
 import com.ning.http.client.websocket.WebSocketUpgradeHandler
+import groovy.util.logging.Slf4j
 import org.glassfish.tyrus.server.Server
-import org.slf4j.Logger
-import org.slf4j.LoggerFactory
 import spock.lang.Shared
 import spock.lang.Specification
 
@@ -18,11 +17,13 @@ import spock.lang.Specification
  * @since 12/3/12
  * @author Viktor Gamov (viktor.gamov@faratasystems.com)
  */
+@Slf4j
 class AuctionWebSocketTest extends Specification {
 
-    private static Logger logger = LoggerFactory.getLogger(AuctionWebSocketTest.class);
+//    private static Logger logger = LoggerFactory.getLogger(AuctionWebSocketTest.class);
 
-    @Shared Server server
+    @Shared
+    Server server
 
     def setupSpec() {
         HashSet<Class<?>> beans = new HashSet<>();

@@ -11,12 +11,13 @@ sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
 repositories {
-    mavenLocal()
-    mavenCentral()
+
     maven {
-        name "Eclipse"
-        url "http://download.eclipse.org/rt/eclipselink/maven.repo"
+        name "Glassfish promoted"
+        url "https://maven.java.net/content/groups/promoted/"
     }
+    mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
@@ -38,5 +39,5 @@ dependencies {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.6'
+    gradleVersion = '1.9'
 }
