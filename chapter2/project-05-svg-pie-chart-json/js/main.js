@@ -195,11 +195,11 @@ window.onload = function() {
 			var marker;
 
 			// self invoking function, passing the number of iterations as an argument i.e. campaigns count
-			(function getCoordinatesByAddress(e) {
+			(function getCoordinatesByAddress(numberOfIterations) {
 
-				var address = campaigns.items[e - 1].location;
-				var campaignsTitle = campaigns.items[e - 1].title;
-				var campaignsDescription = campaigns.items[e - 1].description;
+				var address = campaigns.items[numberOfIterations - 1].location;
+				var campaignsTitle = campaigns.items[numberOfIterations - 1].title;
+				var campaignsDescription = campaigns.items[numberOfIterations - 1].description;
 
 				//get latitude and longitude by city name from json data
 				geocoder.geocode({
@@ -229,19 +229,9 @@ window.onload = function() {
 							}
 						})(marker));
 
-						/*
-						 // resize map onload
-						 google.maps.event.addListenerOnce(map, 'idle', function() {
-						 locationMap.style.width = "400px";
-						 locationMap.style.height = "400px";
-						 locationMap.style.top = "-170px";
-						 locationMap.style.left = "-40px";
-						 google.maps.event.trigger(map, "resize");
-						 });
-						 */
 
-						if (--e) {
-							getCoordinatesByAddress(e);
+						if (--numberOfIterations) {
+							getCoordinatesByAddress(numberOfIterations);
 						}
 
 					} else {
