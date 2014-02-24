@@ -1,8 +1,8 @@
 define [
-  'order!login',
-  'order!donation',
-  'order!campaigns-map',
-  'order!svg-pie-chart',
+  'login',
+  'donation',
+  'campaigns-map',
+  'svg-pie-chart',
   'modules/generic-module'
 ], ()->
   (->

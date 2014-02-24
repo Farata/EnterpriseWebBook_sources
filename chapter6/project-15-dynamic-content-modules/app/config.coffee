@@ -14,7 +14,8 @@ require.config
     'bower_components': "../bower_components",
     'jquery': '../bower_components/jquery/jquery'
     'main': 'main',
-    'GoogleMap': '../bower_components/requirejs-google-maps/dist/GoogleMap'
+    'GoogleMap': '../bower_components/requirejs-google-maps/dist/GoogleMap',
+    'async': '../bower_components/requirejs-plugins/src/async'
 
 unless window.requireTestMode
   require ["main"], ->
