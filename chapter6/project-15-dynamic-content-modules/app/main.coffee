@@ -5,51 +5,54 @@ define [
   'svg-pie-chart',
   'modules/generic-module'
 ], ()->
+  onDemandLoadingClickHandlerFactory = (config)->
+    (event)->
+      return if config.amdInstance is "loading"
+      if config.amdInstance?
+        config.amdInstance.render(event.target.id, config.containerId, config.viewUrl)
+        return
+      else
+        config.amdInstance = "loading"
+        require ["modules/generic-module"], (GenericModule)->
+          moduleInstance = new GenericModule(config.moduleId);
+          moduleInstance.render(event.target.id, config.containerId, config.viewUrl)
+          config.amdInstance = moduleInstance
+          return
+        return
+
+  initComponent = (config)->
+    config.button.addEventListener "click", onDemandLoadingClickHandlerFactory(config), false
+    return
+
   (->
     way_to_give = document.getElementById("way-to-give")
     what_we_do = document.getElementById("what-we-do")
     who_we_are = document.getElementById("who-we-are")
     where_we_work = document.getElementById("where-we-work")
 
-    modulesConfig = [
+    componentConfigArray = [
       moduleId: "whoWeAre",
       button: who_we_are,
       containerId: "who-we-are-container",
-      htmlContentUrl: "assets/html-includes/who-we-are.html"
+      viewUrl: "assets/html-includes/who-we-are.html"
     ,
       moduleId: "whatWeDo"
       button: what_we_do
       containerId: "what-we-do-container"
-      htmlContentUrl: "assets/html-includes/what-we-do.html"
+      viewUrl: "assets/html-includes/what-we-do.html"
     ,
       moduleId: "whereWeWork",
       button: where_we_work,
       containerId: "where-we-work-container",
-      htmlContentUrl: "assets/html-includes/where-we-work.html"
+      viewUrl: "assets/html-includes/where-we-work.html"
     ,
       moduleId: "wayToGive"
       button: way_to_give
       containerId: "way-to-give-container"
-      htmlContentUrl: "assets/html-includes/way-to-give.html"
+      viewUrl: "assets/html-includes/way-to-give.html"
     ]
 
-    lazyLoadingEventHandlerFactory = (moduleId, containerId, htmlContentPath)->
-      (event)->
-        return if module is "loading"
-        if module?
-          module.render(event.target.id, containerId, htmlContentPath)
-        else
-          module = "loading"
-          require ["modules/generic-module"], (GenericModule)->
-            module = new GenericModule(moduleId);
-            module.render(event.target.id, containerId, htmlContentPath)
-
-    initModule = (module)->
-      handler = lazyLoadingEventHandlerFactory(module.moduleId, module.containerId,
-        module.htmlContentUrl)
-      module.button.addEventListener "click", handler, false
-
-    initModule module for module in modulesConfig
+    initComponent componentConfig for componentConfig in componentConfigArray
 
     console.log "app is loaded"
 
