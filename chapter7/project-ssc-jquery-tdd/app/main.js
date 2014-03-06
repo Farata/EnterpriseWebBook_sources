@@ -236,7 +236,7 @@ $(function() {
 		});
 	}
 
-	loadData('data/campaignsdata.json');
+	loadData('app/data/campaignsdata.json');
 });
 
 /* --------- google maps | multi markers | json data  // end -------------- */
@@ -362,7 +362,7 @@ $(function() {
             });
     }
 		
-		loadData('data/chartdata.json', $('#svg-container')[0]);
+		loadData('app/data/chartdata.json', $('#svg-container')[0]);
 });
 
 /*svg pie chart //end */

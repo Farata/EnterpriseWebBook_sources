@@ -16,10 +16,10 @@ describe("My function under test should", function () {     // <1>
         expect(2 + 2).toEqual(4);                       // <5>
     });
 
-    it("part of super agents", function () {
+    it("be part of super agents", function () {
         expect("James Bond").toBeSecretAgent();
         expect("Jason Bourne").toBeSecretAgent();
-        //expect("Austin Powers").toBeSecretAgent();     // <3>
+       // expect("Austin Powers").toBeSecretAgent();     // <3>
         expect("Austin Powers").not.toBeSecretAgent();
     });
 });
