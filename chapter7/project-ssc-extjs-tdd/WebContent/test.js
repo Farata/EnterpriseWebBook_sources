@@ -22,24 +22,7 @@ Ext.onReady(function () {
         controllers: [
             'Donate'
         ],
-        initJasmine: function () {
-            var jasmineEnv = jasmine.getEnv();
-
-            /*var jsApiReporter = new jasmine.JsApiReporter();
-             var htmlReporter = new jasmine.HtmlReporter();*/
-
-            //jasmineEnv.addReporter(jsApiReporter);
-            //jasmineEnv.addReporter(htmlReporter);
-
-            /*jasmineEnv.specFilter = function (spec) {
-             return htmlReporter.specFilter(spec);
-             };*/
-
-            jasmineEnv.execute();
-        },
         launch: function () {
-            this.initJasmine();
-
             Ext.create('Test.spec.AllSpecs');
         }
     });

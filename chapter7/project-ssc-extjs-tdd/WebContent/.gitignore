@@ -7,3 +7,8 @@ build/
 
 # add target dir back, fixing maven ignore rules
 !ext/src/fx/target/
+
+node_modules/
+bower_components/
+temp/
+dist/
