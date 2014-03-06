@@ -1,0 +1,7 @@
+{
+  "name": "savesickchid extjs version",
+  "dependencies": {
+    "jasmine": "~2.0.0",
+    "jasmine-fixture": "~1.2.0"
+  }
+}

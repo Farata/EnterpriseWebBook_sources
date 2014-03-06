@@ -12,7 +12,7 @@ Ext.define("Test.spec.DonateControllerSpec", {}, function () {
                 var donateForm = Ext.create('SSC.view.DonateForm', {});
                 var controller = Ext.create('SSC.controller.Donate');
                 spyOn(donorInfo, 'donate');
-                spyOn(controller, 'getDonatePanel').andCallFake(function () {
+                spyOn(controller, 'getDonatePanel').and.callFake(function () {
                     donateForm.down = function () {
                         return {
                             isValid: function () {
@@ -25,7 +25,7 @@ Ext.define("Test.spec.DonateControllerSpec", {}, function () {
                     };
                     return donateForm;
                 });
-                spyOn(controller, 'newDonorInfo').andCallFake(function () {
+                spyOn(controller, 'newDonorInfo').and.callFake(function () {
                     return donorInfo;
                 });
                 controller.submitDonateForm();
