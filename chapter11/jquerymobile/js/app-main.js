@@ -1,6 +1,6 @@
 $(document).on('pagebeforeshow', function() {
-	// Overwrite jQM limits "No more than 5 items per line in navbar"
-	// Also additional steps were done in the CSS
+	// Override jQM limitation "No more than 5 items per line in navbar"
+	// Additional steps were done in the CSS
 	$(".ssc-navbar > ul").removeClass("ui-grid-a");
 
 	// We use the localStorage to pass a state of a login/logout
@@ -120,7 +120,7 @@ $(document).on('pageshow', "#Donate", function() {
 		event.preventDefault();
 
 		// Serialize selected input fields
-		// get inputs data with definite type, name or value - total 6
+		// get input data with definite type, name or value - total 6
 		// paypal_email, item_name, currency_code - i.e. all hidden exept name=cdm
 		// amount, full name, email
 		var queryString = $('form[name="_xclick"]').find(':input[type=hidden][name!=cmd], :input[name=amount][value!=""], :input[name=full_name], :input[name=email_addr]').serialize();

@@ -1,6 +1,6 @@
 == EnterpriseWebBook_sources
 
-Code sample from the book http://enterprisewebbook.com/["*Enterprise Web Development: From Desktop to Mobile*"]
+Code sample from the book http://oreil.ly/18ZITSy["Enterprise Web Development: From Desktop to Mobile"].
 
 === Prerequisites ===
 

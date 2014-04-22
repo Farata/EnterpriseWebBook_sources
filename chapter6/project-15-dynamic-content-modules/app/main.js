@@ -22,7 +22,8 @@ define(['login', 'donation', 'campaigns-map', 'svg-pie-chart', 'modules/generic-
     config.button.addEventListener("click", onDemandLoadingClickHandlerFactory(config), false);
   };
   return (function() {
-    var componentConfig, componentConfigArray, way_to_give, what_we_do, where_we_work, who_we_are, _i, _len;
+    var componentConfig, componentConfigArray, way_to_give, what_we_do,
+        where_we_work, who_we_are, _i, _len;
     way_to_give = document.getElementById("way-to-give");
     what_we_do = document.getElementById("what-we-do");
     who_we_are = document.getElementById("who-we-are");
