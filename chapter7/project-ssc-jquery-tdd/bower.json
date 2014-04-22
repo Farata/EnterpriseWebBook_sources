@@ -1,0 +1,7 @@
+{
+  "name": "qunit",
+  "dependencies": {
+    "jquery": ">= 1.9.0",
+    "qunit": "~1.14.0"
+  }
+}

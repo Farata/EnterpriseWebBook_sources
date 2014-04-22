@@ -5,7 +5,3 @@ define ["newContentLoader"], (contentLoader) ->
       console.log("Module #{moduleId} is rendered...")
 
   genericModule
-
-
-
-

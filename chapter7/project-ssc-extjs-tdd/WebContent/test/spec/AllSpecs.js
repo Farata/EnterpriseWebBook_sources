@@ -8,6 +8,5 @@ Ext.define('Test.spec.AllSpecs', {
         'Test.spec.CampaignsStoreSpec',
         'Test.spec.DonorsStoreSpec',
         'Test.spec.DonateControllerSpec'
-        /*, 'Test.spec.ModelAssumptions' */
     ]
 });
