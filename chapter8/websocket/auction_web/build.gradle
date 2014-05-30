@@ -5,8 +5,6 @@ apply plugin: 'eclipse'
 apply plugin: 'eclipse-wtp'
 apply plugin: 'war'
 
-def websocket_version = '1.0'
-
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
@@ -21,23 +19,6 @@ repositories {
 }
 
 dependencies {
-    groovy 'org.codehaus.groovy:groovy-all:2.0.5'
-
-    //providedCompile "org.glassfish.tyrus:websocket-impl:${websocket_version}"
-    providedCompile "javax.websocket:javax.websocket-api:${websocket_version}"
-    providedCompile 'javax.json:javax.json-api:1.0'
+    providedCompile 'javax:javaee-api:7.0'
     compile "com.google.code.gson:gson:2.2.2"
-    compile "org.glassfish.tyrus:tyrus-server:1.3-SNAPSHOT"
-    compile "org.glassfish.tyrus:tyrus-container-grizzly:1.3-SNAPSHOT"
-    compile "org.glassfish.tyrus:tyrus-servlet:${websocket_version}"
-
-    testCompile "org.spockframework:spock-core:0.7-groovy-2.0"
-
-    testCompile 'com.ning:async-http-client:1.7.8'
-    testCompile 'ch.qos.logback:logback-classic:1.0.6'
-    testCompile 'org.slf4j:slf4j-api:1.6.5'
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '1.9'
 }
