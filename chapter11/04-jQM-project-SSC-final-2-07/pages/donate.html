@@ -1,124 +1,66 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 	<head>
 		<meta charset="utf-8">
-		<title>Save The Child | Home Page</title>
-		<link rel="stylesheet" href="assets/css/styles.css">
 	</head>
 	<body>
-		<div id="main-container">
-			<header>
-				<h1 id="logo">Save The Child</h1>
-				<nav id="top-nav">
-					<ul>
-						<li id="login">
-							<div id="authorized">
-								<span class="icon-user authorized-icon"></span>
-								<span id="user-authorized">admin</span>
-								<br/>
-								<a id="profile-link" href="javascript:void(0);">profile</a> | <a id="logout-link" href="javascript:void(0);">logout</a>
-							</div>
+		<!-- Start: page #Donate -->
+		<div data-role="page" data-add-back-btn="true" id="Donate">
+			<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="persistent-header">
+				<a href="login.html" data-icon="chevron-down" data-iconpos="right" class="ui-btn-right login-btn" data-rel="dialog">Login</a>
+				<a href="#LogoutPopupDialog" data-icon="chevron-down" data-iconpos="right" class="ui-btn-right logout-btn" data-rel="popup" style="display: none">Logout</a>				
+				<h1><img class="header-logo" src="../assets/img/logo-20x20.png" alt="Save Sick Child Logo"/></h1>
+			</div><!-- /header -->
+			<div data-role="content">
+				<h3>Make a donation today</h3>
+				<form name="_xclick">
+					<input type="hidden" name="cmd" value="_xclick">
+					<input type="hidden" name="paypal_email" value="email-registered-in-paypal@site-url.com">
+					<input type="hidden" name="item_name" value="Donation to the Save Sick Child">
+					<input type="hidden" name="currency_code" value="USD">
+					<div class="donation-form-section">
+						<label class="donation-heading">Please select donation amount</label>
+						<fieldset data-role="controlgroup" data-type="horizontal" id="radio-container">
+							<input type="radio" name="amount" id="d10" value="10"/>
+							<label for="d10">$10</label>
+							<input type="radio" name="amount" id="d20" value="20" />
+							<label for="d20">$20</label>
+							<input type="radio" name="amount" id="d50" checked="checked" value="50" />
+							<label for="d50">$50</label>
+							<input type="radio" name="amount" id="d100" value="100" />
+							<label for="d100">$100</label>
+						</fieldset>
+						<label class="donation-heading">...or enter other amount</label>
 
-							<form id="login-form">
-								<span class="icon-user login-form-icons"></span>
-								<input id="username" name="username" type="text" placeholder="username" autocomplete="off" />
-								&nbsp; <span class="icon-locked login-form-icons"></span>
-								<input id="password" name="password" type="password" placeholder="password"/>
-							</form>
-							<a id="login-submit" href="javascript:void(0)">login &nbsp;<span class="icon-enter"></span> </a>
-							<a id="login-link" class="show-form" href="javascript:void(0)">login &nbsp;<span class="icon-enter"></span> </a>
+						<input id="customAmount" name="amount"  value="" type="number" pattern="[0-9]*" autocomplete="off" placeholder="$"/>
 
-							
-						</li>
-						<li id="top-menu-items">
-							<ul>
-								<li>
-									<a href="javascript:void(0)">Who We Are</a>
-								</li>
-								<li>
-									<a href="javascript:void(0)">What We Do</a>
-								</li>
-								<li>
-									<a href="javascript:void(0)">Where We Work</a>
-								</li>
-								<li>
-									<a href="javascript:void(0)">Way To Give</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<div id="main" role="main">
-				<section id="main-top-section">
-					<div id="donation-address">
-						<p class="donation-address">
-							Lorem ipsum dolor sit amet, consectetur e magna aliqua.
-							Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-							Excepteur sint occaecat cupidatat non proident.
-						</p>
-						<button class="donate-button" id="donate-botton">
-							<span class="donate-botton-header">Donate Now</span>
-							<br/>
-							<span class="donate-2nd-line">Children can't wait</span>
-						</button>
-
-					</div>
-					<div id="donate-form-container">
-						<h3>Make a donation today</h3>
-
-						<form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-							<input type="hidden" name="cmd" value="_xclick">
-							<input type="hidden" name="business" value="email-registered-in-paypal@site-url.com">
-							<input type="hidden" name="item_name" value="Donation">
-							<input type="hidden" name="currency_code" value="USD">
-							<div class="donation-form-section" id="donationAmounts">
-								<label class="donation-heading">Please select or enter
-									<br/>
-									donation amount</label>
-								<input type="radio"
-								name = "amount"
-								id=  "d10"
-								value = "10"/>
-								<label for = "d10">10</label>
-								<br/>
-								<input type="radio"
-								name = "amount"
-								id = "d20"
-								value="20" />
-								<label for = "d20">20</label>
-								<br/>
-								<input type="radio"
-								name = "amount"
-								id="d50"
-								checked="checked"
-								value="50" />
-								<label for="d50">50</label>
-								<br/>
-								<input type="radio"
-								name = "amount"
-								id="d100"
-								value="100" />
-								<label for="d100">100</label>
-								<br/>
-								<input type="radio"
-								name = "amount"
-								id="d200"
-								value="200" />
-								<label for="d200">200</label>
-								<label class="donation-heading">Other amount</label>
-								<input id="customAmount"
-								name="amount" value="" type="text"  autocomplete="off" />
-							</div>
-							<div class="donation-form-section">
-								<label class="donation-heading">Donor information</label>
+						<br/>
+						<label class="donation-heading">Donor information</label>
+						<fieldset class="ui-grid-a donate-input-breakpoint">
+							<div class="ui-block-a input-holder">
 								<input type="text" id="full_name" name="full_name" placeholder="full name *" required>
+							</div>
+							<div class="ui-block-b">
 								<input type="email" id="email_addr" name="email_addr" placeholder="email *" required>
+							</div>
+						</fieldset>
+						<label class="donation-heading">Location</label>
+						<fieldset class="ui-grid-a donate-input-breakpoint">
+							<div class="ui-block-a input-holder">
 								<input type="text" id="street_address" name="street_address" placeholder="address">
-								<input type="text" id="city" name="scty" placeholder="city">
-								<input type="text" id="zip" name="zip" placeholder="zip/postal code">
+							</div>
+							<div class="ui-block-b">
+								<input type="text" id="city" name="city" placeholder="city">
+							</div>
+						</fieldset>
+						<fieldset class="ui-grid-b donate-input-breakpoint">
+							<div class="ui-block-a input-holder">
+								<!-- Using the pattern attribute, pattern=”[0-9]*”,
+								with the number input type will display
+								the 10-digit numeric keypad similar to the tel keypad-->
+								<input type="number" pattern="[0-9]*" id="zip" name="zip" placeholder="zip/postal code">
+							</div>
+							<div class="ui-block-b">
 								<select name="state">
 									<option value="" selected="selected"> - State - </option>
 									<option value="AL">Alabama</option>
@@ -173,6 +115,8 @@
 									<option value="WI">Wisconsin</option>
 									<option value="WY">Wyoming</option>
 								</select>
+							</div>
+							<div class="ui-block-c">
 								<select name="country">
 									<option value="" selected="selected"> - Country - </option>
 									<option value="United States">United States</option>
@@ -418,47 +362,53 @@
 									<option value="Zimbabwe">Zimbabwe</option>
 								</select>
 							</div>
-							<div class="donation-form-section make-payment">
-								<h4>We accept Paypal payments</h4>
-								<p>
-									Your payment will processed securely by <b>PayPal</b>. PayPal employ industry-leading encryption and fraud prevention tools.
-									Your financial information is never divulged to us.
-								</p>
-
-								<button class="donate-button donate-button-submit">
-									<span class="donate-botton-header">Donate Now</span>
-									<br/>
-									<span class="donate-2nd-line">Children can't wait</span>
-								</button>
-								<a id="donate-later-link" href="javascript:void(0);">I'll donate later <span class="icon-cancel"></span></a>
-							</div>
-						</form>
+						</fieldset>
 					</div>
-				</section>
-				<section id="main-bottom-section">
-					<div id="video-container">
-						<div id="video-container">
-							<iframe src="https://www.youtube.com/watch?v=X1J0oMayvC0?wmode=transparent&hd=1&vq=hd720" frameborder="0" width="390" height="240"></iframe>
-							<!-- URL parameters  hd=1 vq=hd720 are forced YouTube to load video in HD quality-->
-
-							<h3>Video header goes here</h3>
-							<h5><a href="javascript:void(0);">More videos</a></h5>
-						</div>
+					<div class="donate-button-submit-holder">
+						<!-- <button class="donate-button-submit" data-theme="a">
+						Donate Now
+						</button> -->
+						<input class="donate-button-submit" type="submit" value="Donate Now"/>
 					</div>
-				</section>
+				</form>
+			</div><!-- /content -->
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-id="persistent-footer">
+				<div data-role="navbar" class="ssc-navbar">
+					<ul>
+						<li>
+							<a href="about.html" data-iconshadow="false" data-icon="info-sign" data-transition="slideup">About</a>
+						</li>
+						<li>
+							<a href="#" data-iconshadow="false" data-icon="heart" class="ui-state-persist">Donate</a>
+						</li>
+						<li>
+							<a href="stats.html" data-iconshadow="false" data-icon="bar-chart" data-transition="slideup">Stats</a>
+						</li>
+						<li>
+							<a href="events.html" data-iconshadow="false" data-icon="map-marker" data-transition="slideup">Events</a>
+						</li>
+						<li>
+							<a href="media.html" data-iconshadow="false" data-icon="film" data-transition="slideup">Media</a>
+						</li>
+						<li>
+							<a href="share.html" data-iconshadow="false" data-icon="share" data-transition="slideup">Share</a>
+						</li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+			<div data-role="popup" id="donatePopupDialog" class="ui-content" data-transition="slidedown" data-overlay-theme="a">
+				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<div id="donatePopupContent">
+					Donate page popup Content
+				</div>
 			</div>
-			<footer>
-				<section id="temp-project-name-container">
-					<b>project 06</b>: Youtube Video Embedding
-				</section>
-				<section id="social-icons">
-					<a href="javascript:void(0)" title="Our Facebook page"><span aria-hidden="true" class="icon-facebook"></span></a>
-					<a href="javascript:void(0)" title="Our Google Plus page"><span aria-hidden="true" class="icon-gplus"></span></a>
-					<a href="javascript:void(0)" title="Our Twitter"><span aria-hidden="true" class="icon-twitter"></span></a> &nbsp; <a href="javascript:void(0)" title="RSS feed"><span aria-hidden="true" class="icon-feed"></span></a>
-					<a href="javascript:void(0)" title="Email us"><span aria-hidden="true" class="icon-mail"></span></a>
-				</section>
-			</footer>
-		</div>
-		<script src="js/main.js"></script>
+			<div data-role="popup" id="LogoutPopupDialog" data-transition="slidedown" data-position-to="window">
+				<div data-role="content" data-theme="d" class="ui-corner-bottom ui-content ui-body-d" role="main">
+					<h3 class="ui-title">Are you sure you want to logout?</h3>
+					<a href="#" data-role="button" data-inline="true" data-rel="back">Cancel</a>
+					<a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="a" class="logout-confirm-btn">Logout</a>
+				</div>
+			</div>
+		</div><!-- /page   -->
 	</body>
 </html>

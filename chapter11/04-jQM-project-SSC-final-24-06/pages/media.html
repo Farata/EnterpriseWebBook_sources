@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<!-- Start: page #Media-->
+		<div data-role="page" data-add-back-btn="true" id="Media">
+			<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="persistent-header">
+				<a href="login.html" data-icon="chevron-down" data-iconpos="right" class="ui-btn-right login-btn" data-rel="dialog">Login</a>
+				<h1><img class="header-logo" src="../assets/img/logo-20x20.png" alt="Save Sick Child Logo"/></h1>
+			</div><!-- /header -->
+			<div data-role="content" >
+				<ul data-role="listview" data-theme="a" data-inset="true">
+					<li data-icon="chevron-right">
+						<a href="#popupHtmlVideo" data-rel="popup"> <img src="../assets/img/thumb-01.jpg" class="ui-liicon"
+						alt=""/> <h3>The title of a video-clip</h3> 
+						<p>Video description goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						<span class="ui-icon-play-circle ssc-play-sign"></span> </a>
+					</li>
+					<li data-icon="chevron-right">
+						<a href="#ytVideo" data-rel="popup"> <img src="../assets/img/thumb-02.jpg" class="ui-liicon"
+						alt=""/> <h3>The title of a video-clip</h3>
+						<p>Video description goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						<span class="ui-icon-play-circle ssc-play-sign"></span> </a>
+					</li>
+
+				</ul>
+
+				<!--Note: looping (or any sort of seeking, for that matter) in < video > elements
+				on Chrome only works if the video file was served up by a server
+				that understands partial content requests -->
+
+			</div><!-- /content -->
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-id="persistent-footer">
+				<div data-role="navbar" class="ssc-navbar">
+					<ul>
+						<li>
+							<a href="about.html" data-iconshadow="false" data-icon="info-sign" data-transition="slideup" data-prefetch>About</a>
+						</li>
+						<li>
+							<a href="donate.html" data-iconshadow="false" data-icon="heart" data-transition="slideup" data-prefetch>Donate</a>
+						</li>
+						<li>
+							<a href="stats.html" data-iconshadow="false" data-icon="bar-chart" data-transition="slideup" data-prefetch>Stats</a>
+						</li>
+						<li>
+							<a href="events.html" data-iconshadow="false" data-icon="map-marker" data-transition="slideup" data-prefetch>Events</a>
+						</li>
+						<li>
+							<a href="#" data-iconshadow="false" data-icon="film" class="ui-state-persist" data-prefetch>Media</a>
+						</li>
+						<li>
+							<a href="share.html" data-iconshadow="false" data-icon="share" data-transition="slideup" data-prefetch>Share</a>
+						</li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+			<!-- html5 video in popup -->
+			<div data-role="popup" id="popupHtmlVideo" data-transition="slidedown" data-overlay-theme="a" data-theme="a" data-position-to="window" data-corners="false">
+				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<video controls="controls" poster="../assets/media/intro.jpg" preload="metadata">
+					<source src="../assets/media/intro.mp4" type="video/mp4">
+					<source src="../assets/media/intro.webm" type="video/webm">
+					<p>Sorry, your browser doesn't support the video element</p>
+				</video>
+			</div>
+
+			<!-- YouTube video in popup -->
+			<div data-role="popup" id="ytVideo" data-transition="slidedown"  data-overlay-theme="a" data-theme="a" data-position-to="window" data-corners="false">
+				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<iframe id="ytplayer" src="http://www.youtube.com/embed/VGZcerOhCuo?wmode=transparent&hd=1&vq=hd720" frameborder="0" width="480" height="270" allowfullscreen></iframe>
+			</div>
+		</div><!-- /page   -->
+	</body>
+</html>

@@ -1,0 +1,159 @@
+
+/* prevent using images for icons -override default classes */
+.ui-icon-plus, .ui-icon-minus, .ui-icon-delete, .ui-icon-arrow-r, .ui-icon-arrow-l, .ui-icon-arrow-u, .ui-icon-arrow-d, .ui-icon-check, .ui-icon-gear, .ui-icon-refresh, .ui-icon-forward, .ui-icon-back, .ui-icon-grid, .ui-icon-star, .ui-icon-alert, .ui-icon-info, .ui-icon-home, .ui-icon-search, .ui-icon-searchfield:after, .ui-icon-checkbox-off, .ui-icon-checkbox-on, .ui-icon-radio-off, .ui-icon-radio-on, .ui-icon-email, .ui-icon-page, .ui-icon-question, .ui-icon-foursquare, .ui-icon-dollar, .ui-icon-euro, .ui-icon-pound, .ui-icon-apple, .ui-icon-chat, .ui-icon-trash, .ui-icon-mappin, .ui-icon-direction, .ui-icon-heart, .ui-icon-wrench, .ui-icon-play, .ui-icon-pause, .ui-icon-stop, .ui-icon-person, .ui-icon-music, .ui-icon-wifi, .ui-icon-phone, .ui-icon-power, .ui-icon-lightning, .ui-icon-drink, .ui-icon-android {
+	background-image: none !important;
+}
+/* if we prevent using images, we shuold provide custom icon for buttons
+ - override default class via icon-font */
+
+.ui-icon-arrow-l:before {
+	content: "\f053";
+	margin-top: 2px
+}
+.ui-icon-delete:before {
+	content: "\f00d";
+	margin-left: 3px;
+	margin-top: -2px
+}
+.ui-icon-arrow-r:before {
+	content: "\f054";
+	padding-left: 2px;
+}
+.ui-icon-arrow-d:before {
+	content: "\f078";
+}
+.ui-icon-home:before {
+	content: "\f015";
+}
+
+.header-logo {
+	vertical-align: middle;
+	padding-right: 0.3em;
+	margin-top: -2px;
+}
+
+.ssc-navbar .ui-btn-text, .ssc-extra-navbar .ui-btn-text{
+	font-size: 0.9em
+}
+
+/* override, customize icons css */ 
+.ssc-navbar .ui-icon {
+	background: none !important;
+	margin-top:2px !important;
+}
+/* jQM limits items per line to 5 in jQuery Mobile navbar. 
+ We need 6. So we should override default CSS rule.
+ */
+.ssc-navbar .ui-block-a {
+	width:16.66% !important;
+}
+.ssc-navbar .ui-block-b {
+	width:16.66% !important;
+}
+
+.ssc-grid-nav {
+	display: block; 
+	text-align: center; 
+	border-top: 1px solid #c0c0c0;
+	text-decoration:none;
+	color: #555 !important;
+	overflow: hidden;
+	box-sizing: border-box
+}
+.ssc-grid-nav:nth-child(odd) {
+	border-right: 1px solid #c0c0c0;
+}
+.ssc-grid-item-icon {
+	display:block;
+	font-size: 2em;
+	padding-bottom: 0.5em
+}
+
+/* start page */
+#start-page-title {
+	text-align: center; 
+	font-size:1.3em;
+	color: #3C8A9E; 
+	margin-top:0;
+}
+#start-page-img {
+	/*center image */
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:56px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* donate page */
+
+#radio-container .ui-btn-text {
+	font-size: 0.9em
+}
+
+.donation-form-section .ui-fullsize .ui-btn-inner {
+	font-size: 0.9em
+}
+.donation-heading {
+	font-weight: bold
+}
+
+.donation-form-section .input-holder {
+	padding-right: 1.5em;
+}
+.donate-button-submit-holder {
+	width: 33%;
+	margin: 2em auto 0 auto
+}
+/* donation form inputs */
+@media all and (max-width: 640px) {
+	.donate-input-breakpoint .ui-block-a, .donate-input-breakpoint  .ui-block-b, .donate-input-breakpoint  .ui-block-c, .donate-input-breakpoint  .ui-block-d, .donate-input-breakpoint  .ui-block-e {
+		width: 100%;
+		float: none;
+	}
+	.donation-form-section .input-holder {
+		padding-right: 0;
+	}
+	.donate-button-submit-holder {
+		width: 100%;
+	}
+}
+/* events page */
+#map-container {
+	padding: 0 !important;
+}
+/*  media page */
+.ssc-play-sign {
+	position:absolute;
+	top: 24px;
+	left: 26px;
+	font-size: 30px;
+	color:#3C8A9E;
+	opacity: 0.8;
+}
+video {
+	width: 100% !important;
+	height: auto !important; 
+} 
+#popupHtmlVideo {
+	background: none !important;
+	width:480px;
+	height:320px;
+}
+.ui-li-thumb, .ui-li-icon {
+    border:1px solid #ccc
+}
+
+@media all and (max-width: 480px) {
+	#popupHtmlVideo {
+		width:300px;
+		height:200px;
+	}
+}
+
+/* snare pages */
+.ssc-share-item-icon {
+	font-size: 1.2em;
+	margin-right: 1em
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+		<!--
+		Hiding Safari User Interface Components on iOS for testing on iOS devices like web app
+		http://goo.gl/8hanf
+		-->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<title>Save Sick Child</title>
+
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<link rel="stylesheet" href="assets/css/jqm-icon-pack-3.0.0-fa.css" />
+		<link rel="stylesheet" href="assets/css/app-styles.css" />
+	</head>
+	<body>
+		<!-- Start page -->
+		<div data-role="page">
+			<!-- header -->
+			<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="persistent-header">
+				<a href="pages/login.html" data-icon="chevron-down" data-iconpos="right" class="ui-btn-right login-btn" data-rel="dialog">Login</a>
+				<h1><img class="header-logo" src="assets/img/logo-20x20.png" alt="Save Sick Child Logo"/> </h1>
+			</div><!-- /header -->
+			<div data-role="content" >
+				<h2>Save Sick Child</h2>
+				<p>
+					<b>Start page</b> comtent.
+				</p>
+			</div><!-- /content -->
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-id="persistent-footer">
+				<div data-role="navbar" class="ssc-navbar">
+					<ul>
+						<li>
+							<a href="pages/about.html" data-iconshadow="false" data-icon="info-sign" data-transition="slideup">About</a>
+						</li>
+						<li>
+							<a href="pages/donate.html" data-iconshadow="false" data-icon="heart" data-transition="slideup">Donate</a>
+						</li>
+						<li>
+							<a href="pages/stats.html" data-iconshadow="false" data-icon="bar-chart" data-transition="slideup">Stats</a>
+						</li>
+						<li>
+							<a href="pages/events.html" data-iconshadow="false" data-icon="map-marker" data-transition="slideup">Events</a>
+						</li>
+						<li>
+							<a href="pages/media.html" data-iconshadow="false" data-icon="film" data-transition="slideup">Media</a>
+						</li>
+						<li>
+							<a href="pages/share.html" data-iconshadow="false" data-icon="share" data-transition="slideup">Share</a>
+						</li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+		</div><!-- /page -->
+	
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		<script src="js/app-main.js"></script>
+	</body>
+</html>

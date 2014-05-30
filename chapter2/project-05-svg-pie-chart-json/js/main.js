@@ -249,7 +249,7 @@ window.onload = function() {
 			var timeStamp = campaigns.timestamp;
 			var campaignsHeader = campaigns.header;
 
-			var message = "<h3>" + campaignsHeader + "</h3>" + "On " + timeStamp + " we run total" + campaignsCount + "campaigns around the country.";
+			var message = "<h3>" + campaignsHeader + "</h3>" + "On " + timeStamp + " we'll run total " + campaignsCount + " campaigns around the country.";
 			var curHtml = locationUI.innerHTML;
 			//add a description text
 			locationUI.innerHTML = message + curHtml;
