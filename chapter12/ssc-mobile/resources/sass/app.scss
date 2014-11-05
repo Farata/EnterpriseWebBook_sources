@@ -1,0 +1,117 @@
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+@include icon-font('IcoMoon', inline-font-files('icomoon/icomoon.woff', woff, 'icomoon/icomoon.ttf', truetype,'icomoon/icomoon.svg', svg));
+@include icon('info',  '!', 'IcoMoon');
+@include icon('love',  '"', 'IcoMoon');
+@include icon('pie',   '#', 'IcoMoon');
+@include icon('pin',   '$', 'IcoMoon');
+@include icon('media', '%', 'IcoMoon');
+@include icon('share', '&', 'IcoMoon');
+
+.child-img {
+  border: 1px solid #999;
+}
+
+// Reduce size of the icons to fit 6 buttons in the tabbar; add Share tab
+.x-tabbar.x-docked-bottom .x-tab {
+  min-width: 2.8em;
+
+  .x-button-icon:before {
+    font-size: 1.4em;
+  }
+}
+
+// Share icons
+.icon-twitter, .icon-facebook, .icon-google-plus, .icon-camera {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+  content: "\27";
+}
+.icon-facebook:before {
+  content: "\28";
+}
+.icon-google-plus:before {
+  content: "\29";
+}
+.icon-camera:before {
+  content: "\2a";
+}
+
+// Share tiles
+.share-tile {
+  top: 25%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  border-width: 0 1px 1px 0;
+
+  p:nth-child(1) {
+    font-size:4em;
+  }
+
+  p:nth-child(2) {
+    margin-top: 1.5em;
+    font-size: 0.9em;
+  }
+}
+
+$sharetile-border: #666 solid;
+
+.sharetile-twitter {
+  border: $sharetile-border;
+  border-width: 0 1px 1px 0;
+}
+
+.sharetile-facebook {
+  border: $sharetile-border;
+  border-width: 0 0 1px;
+}
+
+.sharetile-gplus {
+  border: $sharetile-border;
+  border-width: 0 1px 0 0;
+}
+
+// Media
+.x-videos {
+  .x-list-item > .x-innerhtml {
+    font-weight: bold;
+    line-height: 18px;
+    min-height: 88px;
+
+    > span {
+      display: block;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+
+  .preview {
+    float: left;
+    height: 64px;
+    width: 64px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center center;
+    background: #eee;
+    @include border-radius(3px);
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.6);
+  }
+
+  .x-item-pressed,
+  .x-item-selected {
+    border-top-color: #D1D1D1 !important;
+  }
+}

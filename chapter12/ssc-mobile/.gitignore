@@ -1,0 +1,7 @@
+touch/
+build/
+archive/
+.sass-cache/
+.idea/
+Thumbs.db
+.DS_Store
